@@ -507,7 +507,7 @@ form p{
 	font-size: 18px;
 	font-family:"ubuntuL";
 	top: 85px;
-        left: 280px;    /*was 230*/
+        left: 330px;    /*was 230*/
 	display: flex; /*added*/
 	/*padding-top: 30px;*/
 }
