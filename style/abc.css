@@ -1,0 +1,719 @@
+﻿
+.bold{
+	font-weight: bold;
+}
+
+.MainTable
+{
+    width: 758px;
+    border: 1px solid #999999;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    text-align: left;
+}
+
+.MainTableCell
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #ffffff;
+    text-align: left;
+}
+
+.MainTableRow
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.NoBounds
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.NoBoundsRight
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    float:right;
+}
+
+.RowButtonCell
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-top: 1px solid #9e5532;
+    border-bottom: 1px solid #9e5532;
+    background: #f6821f;
+}
+
+.MainTableFooter
+{
+    margin: 0;
+    padding: 10px;
+    border: 0;
+    background: #f6821f;
+}
+
+.LeftPromoDiv
+{
+    display: inline-block;
+    border: 0;
+    margin: 5px;
+    padding: 0;
+    width: 488px;
+        height: 280px;
+        background-image: url(http://www.mbafin.ru/style/img/handshake.jpg);
+}
+
+.HeaderCell
+{
+    background-image: url(http://www.mbafin.ru/style/img/header.png);
+    height: 111px;
+    vertical-align: top;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+.RightPromoDiv
+{
+    display: block;
+    border: 0;
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+    width: 243px;
+    height: 280px;
+    background-image: url(http://www.mbafin.ru/style/img/money.jpg);
+    background-repeat:no-repeat;
+}
+
+.LeftPromoGlassPanel
+{
+    display: block;
+    margin: 0;
+    padding: 7px;
+    padding-top: 4px;
+    margin-left: 9px;
+    margin-top: 9px;
+    width: 184px;
+    height: 117px;
+    border: 0;
+    line-height:95%;
+}
+
+.RightPromoGlassPanel
+{
+    display: inline-block;
+    margin: 0;
+    border: 0;
+    padding: 5px;
+    margin-left: 14px;
+    margin-top: 140px;
+    width: 202px;
+    height: 128px;
+}
+
+.MainText
+{
+    font-color: #092d5b;
+    font-family: Arial;
+    font-size: 10pt;
+}
+
+.ContactText
+{
+    color: #092d5b;
+    font-family: Arial;
+    font-size: 10pt;
+}
+
+
+
+.ContactName
+{
+    color: #092d5b;
+    font-family: Arial;
+    font-size: 10pt;
+    font-weight: bold;
+}
+
+.WhiteText
+{
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 10pt;
+}
+
+a.TopMenuLink:link
+{
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 9pt;
+    text-decoration: none;
+}
+
+a.TopMenuLink:visited
+{
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 9pt;
+    text-decoration: none;
+}
+
+a.TopMenuLink:active
+{
+    color: #092d5b;
+    font-family: Arial;
+    font-size: 9pt;
+    text-decoration: none;
+}
+
+a.TopMenuLink:hover
+{
+    color: #092d5b;
+    font-family: Arial;
+    font-size: 9pt;
+    text-decoration: none;
+}
+
+.TopMenuDiv
+{
+    margin-top: 0px;
+    display: inline-block;
+    border: 0;
+    padding: 5px;
+    float: left;
+}
+
+.SiteSearch
+{
+    margin-top: 50px;
+    margin-left: 440px;
+    display: block;
+    vertical-align: top;
+}
+
+.SearchInnerDiv
+{
+    vertical-align: top;
+    display: table-cell;
+}
+
+.SearchBox
+{
+    width: 180px;
+    display: inline;
+    vertical-align: middle;
+}
+
+.SearchButton
+{
+    margin: 0;
+    border: 0;
+    display: inline;
+    vertical-align:middle;
+}
+
+.WhiteStripe
+{
+    margin-bottom: -2px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.PromoHeading
+{
+    font-family: Arial;
+    color: #092d5b;
+    font-weight: bold;
+    font-size: 13pt;
+}
+
+.PromoText
+{
+    font-family: Arial;
+    color: #092d5b;
+    font-weight: normal;
+    font-size: 10pt;
+}
+
+.ContentText
+{
+    font-family: Arial;
+    color: #092d5b;
+    font-weight: normal;
+    font-size: 10pt;
+    text-align: justify;
+    display: block;
+    text-indent: 30px;
+}
+
+.ContentHeading1
+{
+    font-family: Arial;
+    color: #092d5b;
+    font-weight: bold;
+    font-size: 11pt;
+    text-align: justify;
+    display: block;
+    text-indent: 30px;
+}
+
+.ContentImg
+{
+    margin-top: 3px;
+    margin-bottom: 5px;
+    border: 0;
+}
+
+.ContentLeftImg
+{
+    margin: 0;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    float: left;
+    border: 0;
+}
+
+.ContentRightImg
+{
+    margin: 0;
+    margin-bottom: 8px;
+    margin-left: 8px;
+    float: right;
+    border: 0;
+}
+
+p
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /*margin-bottom: 3px;*/
+}
+
+.BottomPromoDiv
+{
+    display: inline-block;
+    border: 1px solid #cccccc;
+    margin: 5px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding: 0;
+    width: 362px;
+    height: 290px;
+    owerflow:auto;
+}
+
+.BottomPromoContent
+{
+    padding: 10px;
+}
+
+.HorizontalStripe
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    margin-bottom: 5px;
+}
+
+.LeftContentDiv
+{
+    /*padding: 5px;
+    width: 488px;*/
+}
+
+.LangDiv
+{
+    float: right;
+    margin-right: 8px;
+}
+
+.LangIcon
+{
+    border: 0;
+    margin: 0;
+}
+
+.NewsTableCell
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #ffffff;
+    text-align: left;
+    padding-right: 1px;
+}
+
+.NewsDateCell
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #ffffff;
+    text-align: right;
+    padding-right: 2px;
+    width: 120px;
+    vertical-align:top;
+}
+
+.NewsIndexDateCell
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #ffffff;
+    text-align: right;
+    padding-right: 2px;
+    width: 50px;
+    vertical-align:top;
+}
+
+.NewsIndexDateCellVcenter
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #ffffff;
+    text-align: right;
+    padding-right: 2px;
+    width: 50px;
+    vertical-align:middle;
+}
+
+.DateText
+{
+    color: #092d5b;
+    font-family: Arial;
+    font-size: 9pt;
+    font-weight:bold;
+}
+
+.BoldContentText
+{
+    font-family: Arial;
+    color: #092d5b;
+    font-weight: bold;
+    font-size: 10pt;
+    text-align: justify;
+    display: block;
+    text-indent: 30px;
+}
+
+.PriceTable
+{
+    width: 490px;
+    border: 2px solid #999999;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    text-align: left;
+    position:relative;
+}
+
+.ResponceTable
+{
+    width: 200px;
+    border: 2px solid #999999;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    text-align: left;
+    position:relative;
+}
+
+.ResponceTableCell
+{
+    margin: 0;
+    padding: 1;
+    border-right: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    border-left: 1px solid #000000;
+    border-top:1px solid #000000;
+    font-size: 10pt;
+    text-align: center;
+}
+
+.PriceTableHeaderCell
+{
+    font-family: Arial;
+    margin: 0;
+    padding: 1;
+    border-right: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    border-left: 1px solid #000000;
+    border-top: 1px solid #000000;
+    font-size: 9pt;
+    background: #cccccc;
+    text-align: center;
+    font-weight: bold;
+    width: auto;
+}
+
+.PriceTableHeaderFirstCell
+{
+    font-family: Arial;
+    margin: 0;
+    padding: 1;
+    border-right: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    border-left: 1px solid #000000;
+    border-top: 1px solid #000000;
+    font-size: 9pt;
+    background: #cccccc;
+    text-align: center;
+    font-weight: bold;
+    width: 80pt;
+}
+
+.PriceTableCell
+{
+    margin: 0;
+    padding: 1;
+    border-right: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    border-left: 1px solid #000000;
+    border-top:1px solid #000000;
+    font-size:10pt;
+    text-align: left;
+}
+
+.PriceTableBoldCell
+{
+    margin: 0;
+    padding: 1;
+    border-right: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    border-left: 1px solid #000000;
+    border-top:1px solid #000000;
+    font-size:10pt;
+    text-align: left;
+    font-weight:bold;
+}
+
+.ContentPhoto
+{
+    margin-top: 3px;
+    margin-bottom: 5px;
+    border: 0;
+    width: 488;
+    height: 268;
+}
+
+.ConferencePhoto
+{
+    margin-top: 3px;
+    margin-bottom: 5px;
+    border: 0;
+    width: 488;
+    height: 320;
+}
+
+a.NewsLink:link
+{
+    color: #092d5b;
+    font-family: Arial;
+    font-size: 9pt;
+    text-decoration: underline;
+}
+
+a.NewsLink:visited
+{
+    color: #092d5b;
+    font-family: Arial;
+    font-size: 9pt;
+    text-decoration: underline;
+}
+
+a.NewsLink:active
+{
+    color: #092d5b;
+    font-family: Arial;
+    font-size: 9pt;
+    text-decoration: underline;
+}
+
+a.NewsLink:hover
+{
+    color: #114d7b;
+    font-family: Arial;
+    font-size: 9pt;
+    text-decoration: underline;
+}
+
+.HelpPicture
+{
+    position:relative;
+    left:305px;
+    top: -200px;
+    height:140;
+    width:186;
+    border-color:045aac;
+    border: 1
+}
+
+.PomahamePicture
+{
+    border: 0;
+    width: 300;
+    height: 200;
+}
+
+.smallPicture
+{
+    border: 0;
+    width: 240;
+    height: 180;
+}
+
+.smallPictPersData
+{
+    border: 0;
+    width: 450;
+    height: 268;
+}
+
+.PomahamePictureLeft
+{
+    border: 0;
+    width: 300;
+    height: 225;
+}
+
+.PomahamePictureRigth
+{
+    border: 0;
+    width: 167;
+    height: 225;
+}
+
+.PomahameFirstColumn
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    padding-right: 1px;
+    width: 500;
+}
+
+.PomahameSecondColumn
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    padding-right: 1px;
+    width:200
+}
+
+.PomahameColumn
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    padding-right: 1px;
+    width: 200;
+}
+
+.PomahamePicture2
+{
+    border: 0;
+    width: 240;
+    height: 180;
+}
+
+.ContentTextItalic
+{
+    font-face: Arial;
+    color: #092d5b;
+    font-weight: normal;
+    font-size: 10pt;
+    text-align: justify;
+    display: block;
+    text-indent: 30px;
+    font-style:italic;
+}
+
+.ContentTextRigth
+{
+    font-face: Arial;
+    color: #092d5b;
+    font-weight: normal;
+    font-size: 10pt;
+    text-align: justify;
+    display: block;
+    text-indent: 30px;
+    text-align:right;
+}
+
+.FooterText
+{
+    font-family: Arial;
+    color: #092d5b;
+    font-weight: bold;
+    font-size: 10pt;
+}
+
+.HeaderLink:link
+{
+    font-family: Arial;
+    color: #092d5b;
+    font-weight: bold;
+    font-size: 11pt;
+    text-align: justify;
+    display: block;
+    text-indent: 30px;
+}
+
+.HeaderLink:hover
+{
+    font-family: Arial;
+    color: #114d7b;
+    font-weight: bold;
+    font-size: 11pt;
+    text-align: justify;
+    display: block;
+    text-indent: 30px;
+}
+
+.HeaderLink:visited
+{
+    font-family: Arial;
+    color: #092d5b;
+    font-weight: bold;
+    font-size: 11pt;
+    text-align: justify;
+    display: block;
+    text-indent: 30px;
+}
+
+.CareerHeaderText
+{
+    font-family: Arial;
+    color: #092d5b;
+    font-weight: bold;
+    font-size: 20pt;
+    text-align: justify;
+    display: block;
+    text-indent: 30px;
+    text-decoration: underline;
+}
+
+td{
+ padding:5px;
+}

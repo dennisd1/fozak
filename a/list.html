@@ -1,0 +1,175 @@
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.0.7/semantic.min.css">
+
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.9/components/transition.min.js"></script>
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.9/components/checkbox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.9/components/dropdown.min.js"></script>
+
+
+
+<div class="h1">Учет обработки</div>
+
+<div id="contacts">
+  <table>
+    <thead>
+      <tr>
+        <th class="sort" data-sort="name">Название</th>
+        <th class="sort" data-sort="city">Город</th>
+        <th class="sort" data-sort="ogrn">ОГРН</th>
+        <th class="sort" data-sort="status">Статус</th>
+        <th colspan="4">
+          <input type="text" class="search" placeholder="Поиск компаний">
+        </th>
+      </tr>
+    </thead>
+    <tbody class="list">
+      <tr>
+        <td class="id" style="display:none;">79774</td>
+        <td class="name">ОАО "ИПР "ИНФОРМЭЛЕКТРО"</td>
+        <td class="city">Москва</td>
+        <td class="ogrn">1127746371422</td>
+        <td class="status">
+                         <div class="ui selection dropdown" style="border: none !important;" tabindex="0">
+                                     <input type="hidden" name="status" value="0">
+                                     <div class="text">Обработка</div>
+                                     <div class="menu transition hidden" tabindex="-1">
+                                       <div class="item" data-value="0">Требует обработки</div>
+                                       <div class="item" data-value="1">Обработано</div>
+                                     </div>
+                                   </div>
+        </td>
+        <td class="status2">
+                         <div class="ui selection dropdown" style="border: none !important;" tabindex="0">
+                                     <input type="hidden" name="status2" value="1">
+                                     <div class="text">Мониторинг</div>
+                                     <div class="menu transition hidden" tabindex="-1">
+                                       <div class="item" data-value="1">Мониторинг-должник</div>
+                                       <div class="item" data-value="0">Мониторинг-кредитор</div>
+                                       <div class="item" data-value="2">Мониторинг-банкрот</div>
+                                     </div>
+                                   </div>
+        </td>
+        <td class="checkdate">
+          <input type="date" value="2013-01-08">
+        </td>
+       </tr>
+      
+      </tbody>
+  </table>
+  <table>
+    <tbody><tr><td class="name">
+      <input type="hidden" id="id-field" value="6368">
+      <input type="text" id="name-field" placeholder="Name">
+    </td>
+    <td class="ogrn">
+      <input type="text" id="ogrn-field" placeholder="ОГРН">
+    </td>
+    <td class="city">
+      <input type="text" id="city-field" placeholder="City">
+    </td>
+    <td class="add">
+      <button id="add-btn" style="">Add</button>
+      <button id="edit-btn" style="display: none;">Edit</button>
+    </td>
+  </tr></tbody></table>
+  
+  </div>
+
+<script>
+ $(document).ready(function() {
+    $('.ui.dropdown').dropdown();
+   $('.ui.dropdown.one').dropdown();
+});
+
+//--scource http://listjs.com/examples/add-get-remove/
+
+$.getScript( "//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js", function( data, textStatus, jqxhr ) {
+var options = {
+  valueNames: [ 'id', 'name', 'ogrn', 'city', 'status3' ]  //drop down stop working if 'status'
+};
+
+
+var contactList = new List('contacts', options);
+
+var idField = $('#id-field'),
+    nameField = $('#name-field'),
+    ogrnField = $('#ogrn-field'),
+    cityField = $('#city-field'),
+    addBtn = $('#add-btn'),
+    editBtn = $('#edit-btn').hide(),
+    removeBtns = $('.remove-item-btn'),
+    editBtns = $('.edit-item-btn');
+
+// Sets callbacks to the buttons in the list
+refreshCallbacks();
+
+addBtn.click(function() {
+  //this is !!!!! new-----
+
+//append appendble elements--------------------
+inputogrn = ogrnField.val();  //val()? 
+console.log("input:" + ogrnField.val() + "selector "+$(".ogrn:contains('" + inputogrn + "')").html());
+
+ if ( $('#ogrn-field:contains(inputogrn)').length ) {
+ //console.log("we have such number" + $('#ogrn-field:contains(inputogrn)').html());
+} 
+else {
+    console.log("we dont have number");
+}
+
+  
+  contactList.add({
+    id: Math.floor(Math.random()*110000),
+    name: nameField.val(),
+    ogrn: ogrnField.val(),
+    city: cityField.val()
+  });
+  clearFields();
+  refreshCallbacks();
+});
+
+editBtn.click(function() {
+  var item = contactList.get('id', idField.val())[0];
+  item.values({
+    id:idField.val(),
+    name: nameField.val(),
+    ogrn: ogrnField.val(),
+    city: cityField.val()
+  });
+  clearFields();
+  editBtn.hide();
+  addBtn.show();
+});
+
+function refreshCallbacks() {
+  // Needed to add new buttons to jQuery-extended object
+  removeBtns = $(removeBtns.selector);
+  editBtns = $(editBtns.selector);
+  
+  removeBtns.click(function() {
+    var itemId = $(this).closest('tr').find('.id').text();
+    contactList.remove('id', itemId);
+  });
+  
+  editBtns.click(function() {
+    var itemId = $(this).closest('tr').find('.id').text();
+    var itemValues = contactList.get('id', itemId)[0].values();
+    idField.val(itemValues.id);
+    nameField.val(itemValues.name);
+    ogrnField.val(itemValues.ogrn);
+    cityField.val(itemValues.city);
+    
+    editBtn.show();
+    addBtn.hide();
+  });
+}
+
+function clearFields() {
+  nameField.val('');
+  ogrnField.val('');
+  cityField.val('');
+}
+
+});
+</script>

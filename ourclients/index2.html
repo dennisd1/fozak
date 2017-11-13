@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head><link rel="shortcut icon" type="image/vnd.microsoft.icon" href="http://www.mbafin.ru/images/favicon/blue.ico" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>МБА Финансы
+		
+		</title>
+		<meta name="viewport" content="width=1280,initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="" />
+		<meta name="description" content="" /><link rel="stylesheet" type="text/css" href="../style/style.css">
+<link rel="stylesheet" type="text/css" href="../style/mba.css">
+<link rel="stylesheet" type="text/css" href="../style/lightbox.css">
+</head>
+<body>
+
+<div id="1" data-loader="../components/header.html"></div>
+<div id="2" data-loader="../components/navigation.html"></div>
+<div id="3" data-loader="../components/body.html"></div>
+<div id="4" data-loader="../components/footer.html"></div>
+
+		<script src="../images/jquery-1.11.1.min.js"></script>
+		
+	
+<script>
+	var url;
+	var id;
+	var i=1;
+	var j=1;
+
+	
+$(document).ready(function () {
+	$('div[data-loader]').each(function() {
+		url=$(this).attr("data-loader");
+		id=$(this).attr("id");	
+    		 $.get(url, function(data){
+			 $('#'+j).html(data);
+			 //$('#'+id).html(data);
+			 console.log("# increased"+j);
+			 j++;
+                 });
+	});
+});
+
+</script>
+	<script>
+			$(document).ready(function () {
+				$('.fstLevel').hover(
+					function () {
+						$('ul', this).slideToggle(200);
+					}
+					)
+			});
+		</script>
+	<script>
+$(document).ready(function () {
+	$('.footerOuter').css('background','#ced2d6');
+	$('.someLinks').css('display','block');
+	$('.content').css('height','auto');
+});
+</script>
+	</body>
+</html>

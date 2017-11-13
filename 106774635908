@@ -1,0 +1,5833 @@
+<link href="/a/case.css" rel="stylesheet"/>
+
+<div class="l-card" id="card">
+		<div id="ember1702" class="ember-view b-panel g-print-hidden" style="margin-left: 0px;"><ul class="b-panel-menu">
+	<li class="b-panel-menu-item b-panel-menu-item--logo">
+		<a class="b-panel-menu-item-icon" href="/"></a>
+	</li>
+	<li data-id="tasks" class="b-panel-menu-item b-panel-menu-item--tasks js-panel-menu-item g-unselectable">
+		<span class="b-panel-menu-item-title">Задачи</span>
+		<i class="b-panel-menu-item-icon"></i>
+<!---->	</li>
+	<li data-id="notes" class="b-panel-menu-item b-panel-menu-item--notes js-panel-menu-item g-unselectable">
+		<span class="b-panel-menu-item-title">Заметки</span>
+		<i class="b-panel-menu-item-icon"></i>
+<!---->	</li>
+<!----></ul>
+<div class="b-panel-container">
+	<div class="b-panel-block b-panel-block--tasks js-panel-block--tasks g-hidden">
+		<div id="ember1709" class="ember-view b-tasks"><div class="b-panel-title">
+	Задачи
+		<div class="b-panel-new g-unselectable" data-ember-action="1710">
+			Добавить
+		</div>
+</div>
+<!----><div class="b-panel-body g-nocontent">
+<!----></div>
+</div>
+	</div>
+	<div class="b-panel-block b-panel-block--notes js-panel-block--notes g-hidden">
+		<div id="ember1717" class="ember-view b-notepad"><div class="b-panel-title">
+	Заметки
+		<div class="b-panel-new" data-ember-action="1718">
+			Добавить
+		</div>
+</div>
+<div class="b-panel-body g-nocontent">
+<!----><!----></div>
+</div>
+	</div>
+	<div class="b-panel-block b-panel-block--documents js-panel-block--documents g-hidden">
+		<div id="ember1725" class="ember-view b-review_documents"><div class="b-panel-title">
+	Документы рассмотрения
+</div>
+<div class="b-panel-body g-nocontent">
+<!----></div>
+</div>
+	</div>
+</div>
+</div>
+		<div id="ember1734" class="ember-view b-card b-card--side">	<div class="js-card-head" style="height: 80px;">
+	<div class="js-card-head-container b-card-head-container b-card-sticky" style="transform: translateX(0px);">
+<!---->		<div class="b-card-header-table">
+			<div class="b-card-header-table-row">
+				<div class="b-card-header-table-cell b-card-header-table-cell--left">
+					<div class="b-card-header g-clearfix">
+						<div id="ember1836" class="ember-view b-extra_menu_toggler js-extra_menu_toggler g-unselectable g-print-hidden"><div id="ember1847" class="ember-view b-tooltip b-extra_menu js-tooltip js-tooltip--menu g-hidden"><ul class="b-tooltip-list js-tooltip-list">
+	<li id="ember1854" class="ember-view b-tooltip-item b-tooltip-item--icon js-tooltip-item g-hidden">Запросить доступ
+<div class="b-tooltip-item-icon b-tooltip-item-icon--key"></div>
+</li>
+			<li id="ember1861" class="ember-view b-tooltip-item b-tooltip-item--icon js-tooltip-item">	Добавить в важное
+<div class="b-tooltip-item-icon b-tooltip-item-icon--favorite"></div>
+</li>
+	<li id="ember1868" class="ember-view b-tooltip-item b-tooltip-item--icon js-tooltip-item">Новая задача
+<div class="b-tooltip-item-icon b-tooltip-item-icon--add_case"></div>
+</li>
+	<li id="ember1875" class="ember-view b-tooltip-item b-tooltip-item--icon js-tooltip-item">Новая заметка
+<div class="b-tooltip-item-icon b-tooltip-item-icon--add_case"></div>
+</li>
+			<li id="ember1882" class="ember-view b-tooltip-item b-tooltip-item--link js-tooltip-item"><div class="b-tooltip-item-icon b-tooltip-item-icon--download"></div>
+	<a class="b-tooltip-item-link b-tooltip-item-link--card_menu js-card-download_excerpt" href="/api/Card/Excerpt?inn=7719583594&amp;name=%D0%90%D0%9A%D0%A6%D0%98%D0%9E%D0%9D%D0%95%D0%A0%D0%9D%D0%9E%D0%95+%D0%9E%D0%91%D0%A9%D0%95%D0%A1%D0%A2%D0%92%D0%9E+%22%D0%9F%D0%A0%D0%9E%D0%98%D0%97%D0%92%D0%9E%D0%94%D0%A1%D0%A2%D0%92%D0%95%D0%9D%D0%9D%D0%AB%D0%99+%D0%98+%D0%9D%D0%90%D0%A3%D0%A7%D0%9D%D0%9E-%D0%98%D0%A1%D0%A1%D0%9B%D0%95%D0%94%D0%9E%D0%92%D0%90%D0%A2%D0%95%D0%9B%D0%AC%D0%A1%D0%9A%D0%98%D0%99+%D0%98%D0%9D%D0%A1%D0%A2%D0%98%D0%A2%D0%A3%D0%A2+%D0%9F%D0%9E+%D0%98%D0%9D%D0%96%D0%95%D0%9D%D0%95%D0%A0%D0%9D%D0%AB%D0%9C+%D0%98%D0%97%D0%AB%D0%A1%D0%9A%D0%90%D0%9D%D0%98%D0%AF%D0%9C+%D0%92+%D0%A1%D0%A2%D0%A0%D0%9E%D0%98%D0%A2%D0%95%D0%9B%D0%AC%D0%A1%D0%A2%D0%92%D0%95%22&amp;shortName=%D0%90%D0%9E+%22%D0%9F%D0%9D%D0%98%D0%98%D0%98%D0%A1%22&amp;address=105187%2C+%D0%93%D0%9E%D0%A0%D0%9E%D0%94+%D0%9C%D0%9E%D0%A1%D0%9A%D0%92%D0%90%2C+%D0%9F%D0%A0%D0%9E%D0%95%D0%97%D0%94+%D0%9E%D0%9A%D0%A0%D0%A3%D0%96%D0%9D%D0%9E%D0%99%2C+%D0%94.++18&amp;ogrn=1067746359086&amp;okpo=2494727&amp;isUnique=false&amp;isBranch=false&amp;organizationId=&amp;organizationDictId=&amp;storageId=1792216&amp;isNotPrecise=&amp;headFio=&amp;statusId=0&amp;registrationDate=2006-03-09">
+		Скачать актуальную выписку из
+			ЕГРЮЛ
+	</a>
+</li>
+				<li id="ember1891" class="ember-view b-tooltip-item b-tooltip-item--icon js-tooltip-item">Скачать бизнес-справку
+<div class="b-tooltip-item-icon b-tooltip-item-icon--download"></div>
+<div class="b-tooltip-item-arrow"></div>
+</li>
+				<li id="ember1896" class="ember-view b-tooltip-item b-tooltip-item--icon js-tooltip-item">Распечатать бизнес-справку
+<div class="b-tooltip-item-icon b-tooltip-item-icon--print"></div>
+<div class="b-tooltip-item-arrow"></div>
+</li>
+	<li id="ember1903" class="ember-view b-tooltip-item b-tooltip-item--icon b-tooltip-item--disabled js-tooltip-item g-hidden"><div class="b-tooltip-item-icon b-tooltip-item-icon--download"></div>
+	Скачать все документы по делу<span class="g-dot g-dot--first">.</span><span class="g-dot g-dot--second">.</span><span class="g-dot g-dot--third">.</span>
+</li>
+	<li id="ember1912" class="ember-view b-tooltip-item b-tooltip-item--icon js-tooltip-item g-hidden">Сохранить карточку дела
+<div class="b-tooltip-item-icon b-tooltip-item-icon--download"></div>
+</li>
+	<li id="ember1919" class="ember-view b-tooltip-item b-tooltip-item--icon js-tooltip-item g-hidden">Печать
+<div class="b-tooltip-item-icon b-tooltip-item-icon--print"></div>
+</li>
+</ul>
+</div>
+<div id="ember1926" class="ember-view b-tooltip b-tooltip--business_print b-tooltip--fix_position js-tooltip js-tooltip--business_print"><ul class="b-tooltip-list js-tooltip-list">
+<!----></ul>
+<div class="b-tooltip-item-control">
+	<div class="b-tooltip-item-control-button js-tooltip-item-control-button--back g-clickable">
+		Назад
+	</div>
+	<div class="b-tooltip-item-control-button b-tooltip-item-control-button--right js-tooltip-item-control-button--apply g-clickable">
+			Распечатать
+	</div>
+</div>
+</div>
+</div>
+					</div>
+				</div>
+				<div class="b-card-header-table-cell">
+					<div class="b-card-header">
+						<div class="b-card-header-number">
+								АО "ПНИИИС"
+						</div>
+						<div class="b-card-header-type g-textoverflow">
+									Непубличные акционерные общества
+						</div>
+							<div class="b-card-header-status g-textoverflow">
+								ДЕЙСТВУЮЩЕЕ
+							</div>
+					</div>
+				</div>
+				<div class="b-card-header-table-cell b-card-header-table-cell--right">
+					<div class="b-card-header">
+						<div class="b-card-header-info b-card-header-info--update">
+<!---->						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="b-card-form g-print-hidden">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tr class="b-table-row">
+				<td class="b-table-cell">
+					<div id="ember1933" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title=""></div>
+	<div class="b-toggler-string g-textoverflow g-unselectable js-toggler-button">
+				Указать подборку
+		<div class="b-toggler-string-spin js-toggler-string-spin g-hidden"></div>
+	</div>
+<!----><!----></div>
+				</td>
+				<td class="b-table-cell">
+					<div id="ember1940" class="ember-view b-responsible_user_toggler js-responsible_user_toggler">	<div id="ember2561" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--responsibleusers" data-name="responsibleUsers">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Ответственные</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Указать ответственного
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+</div>
+				</td>
+				<td class="b-table-cell">
+					<div class="b-cell g-textoverflow" title="105187, ГОРОД МОСКВА, ПРОЕЗД ОКРУЖНОЙ, Д.  18">
+						105187, ГОРОД МОСКВА, ПРОЕЗД ОКРУЖНОЙ, Д.  18
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="b-card-comment g-print-hidden">
+		<div id="ember1947" class="ember-view b-comment"><div>
+	<div class="b-comment-text b-comment-text--empty js-comment-edit">
+			Добавить примечание
+	</div>
+</div>
+<div class="g-hidden">
+	<div class="b-comment-input js-comment-edit">
+		<textarea id="ember1970" class="b-comment-textarea js-comment-textarea ember-view ember-text-area" style="overflow: hidden; resize: none; height: 16px;"><!----></textarea>
+	</div>
+</div>
+</div>
+	</div>
+<div class="b-card-menu js-card-menu" style="height: 80px;">
+	<div class="js-card-menu-container">
+		<div class="b-card-submenu b-submenu--hoverable">
+			<div id="ember1979" class="ember-view b-submenu">		<div class="b-submenu-item b-submenu-item--active b-submenu-item--active_with_subitems js-menu-item js-menu-item--hoverable g-unselectable" data-route="side.info|side.risks|side.accounts|side.connections|side.accounting|side.intellectual|side.excerpt" data-tab="" data-id="">
+			Информация<!---->
+		</div>
+		<div class="b-submenu-item js-menu-item js-menu-item--hoverable g-unselectable" data-route="side.licenses|side.contracts|side.audit|side.pledges|side.executions" data-tab="" data-id="">
+			Реестры<!---->
+		</div>
+		<div class="b-submenu-item js-menu-item js-menu-item--hoverable g-unselectable" data-route="side.cases|side.stats|side.analysis|side.sessions|side.sheet" data-tab="" data-id="">
+			Арбитражные дела<!---->
+		</div>
+		<div class="b-submenu-item b-submenu-item--empty js-menu-item js-menu-item--hoverable g-unselectable" data-route="side.general" data-tab="" data-id="">
+			Дела СОЮ<!---->
+		</div>
+	<span class="js-submenu-subitems-container" style="display: block;">
+			<div class="b-submenu-subitems js-submenu-subitems">
+					<div class="b-submenu-subitem js-menu-item b-submenu-subitem--active g-unselectable" data-route="side.info" data-tab="" data-id="">
+						<div class="b-submenu-subitem-title">
+							Общая
+<!---->						</div>
+						<div class="b-submenu-subitem-inner g-invisible">
+							Общая
+<!---->						</div>
+					</div>
+					<div class="b-submenu-subitem js-menu-item g-unselectable" data-route="side.risks" data-tab="" data-id="">
+						<div class="b-submenu-subitem-title">
+							Факторы риска
+									&nbsp;
+									<strong class="b-submenu-subitem-count">
+										5
+									</strong>
+						</div>
+						<div class="b-submenu-subitem-inner g-invisible">
+							Факторы риска
+									&nbsp;
+									<strong class="b-submenu-subitem-count">
+										5
+									</strong>
+						</div>
+					</div>
+					<div class="b-submenu-subitem js-menu-item g-unselectable" data-route="side.accounts" data-tab="" data-id="">
+						<div class="b-submenu-subitem-title">
+							Заблокированные счета
+<!---->						</div>
+						<div class="b-submenu-subitem-inner g-invisible">
+							Заблокированные счета
+<!---->						</div>
+					</div>
+					<div class="b-submenu-subitem js-menu-item g-unselectable" data-route="side.connections" data-tab="" data-id="">
+						<div class="b-submenu-subitem-title">
+							Связи
+<!---->						</div>
+						<div class="b-submenu-subitem-inner g-invisible">
+							Связи
+<!---->						</div>
+					</div>
+					<div class="b-submenu-subitem js-menu-item g-unselectable" data-route="side.accounting" data-tab="" data-id="">
+						<div class="b-submenu-subitem-title">
+							Бухгалтерская отчетность
+<!---->						</div>
+						<div class="b-submenu-subitem-inner g-invisible">
+							Бухгалтерская отчетность
+<!---->						</div>
+					</div>
+					<div class="b-submenu-subitem js-menu-item g-unselectable" data-route="side.intellectual" data-tab="" data-id="">
+						<div class="b-submenu-subitem-title">
+							Интеллектуальная собственность
+<!---->						</div>
+						<div class="b-submenu-subitem-inner g-invisible">
+							Интеллектуальная собственность
+<!---->						</div>
+					</div>
+					<div class="b-submenu-subitem js-menu-item g-unselectable" data-route="side.excerpt" data-tab="" data-id="">
+						<div class="b-submenu-subitem-title">
+							ЕГРЮЛ
+<!---->						</div>
+						<div class="b-submenu-subitem-inner g-invisible">
+							ЕГРЮЛ
+<!---->						</div>
+					</div>
+			</div>
+			<div class="b-submenu-subitems js-submenu-subitems b-submenu-subitem--hidden" style="">
+					<div class="b-submenu-subitem js-menu-item g-unselectable" data-route="side.licenses" data-tab="" data-id="">
+						<div class="b-submenu-subitem-title">
+							Лицензии
+<!---->						</div>
+						<div class="b-submenu-subitem-inner g-invisible">
+							Лицензии
+<!---->						</div>
+					</div>
+					<div class="b-submenu-subitem js-menu-item g-unselectable" data-route="side.contracts" data-tab="" data-id="">
+						<div class="b-submenu-subitem-title">
+							Госконтракты
+<!---->						</div>
+						<div class="b-submenu-subitem-inner g-invisible">
+							Госконтракты
+<!---->						</div>
+					</div>
+					<div class="b-submenu-subitem js-menu-item g-unselectable" data-route="side.audit" data-tab="" data-id="">
+						<div class="b-submenu-subitem-title">
+							Проверки
+<!---->						</div>
+						<div class="b-submenu-subitem-inner g-invisible">
+							Проверки
+<!---->						</div>
+					</div>
+					<div class="b-submenu-subitem js-menu-item g-unselectable" data-route="side.pledges" data-tab="" data-id="">
+						<div class="b-submenu-subitem-title">
+							Залоги
+<!---->						</div>
+						<div class="b-submenu-subitem-inner g-invisible">
+							Залоги
+<!---->						</div>
+					</div>
+					<div class="b-submenu-subitem js-menu-item g-unselectable" data-route="side.executions" data-tab="" data-id="">
+						<div class="b-submenu-subitem-title">
+							Исполнительные производства
+<!---->						</div>
+						<div class="b-submenu-subitem-inner g-invisible">
+							Исполнительные производства
+<!---->						</div>
+					</div>
+			</div>
+			<div class="b-submenu-subitems js-submenu-subitems b-submenu-subitem--hidden" style="">
+					<div class="b-submenu-subitem js-menu-item g-unselectable" data-route="side.cases" data-tab="" data-id="">
+						<div class="b-submenu-subitem-title">
+							Список дел
+<!---->						</div>
+						<div class="b-submenu-subitem-inner g-invisible">
+							Список дел
+<!---->						</div>
+					</div>
+					<div class="b-submenu-subitem js-menu-item g-unselectable" data-route="side.stats" data-tab="" data-id="">
+						<div class="b-submenu-subitem-title">
+							Статистика
+<!---->						</div>
+						<div class="b-submenu-subitem-inner g-invisible">
+							Статистика
+<!---->						</div>
+					</div>
+					<div class="b-submenu-subitem js-menu-item g-unselectable" data-route="side.analysis" data-tab="" data-id="">
+						<div class="b-submenu-subitem-title">
+							Анализ
+<!---->						</div>
+						<div class="b-submenu-subitem-inner g-invisible">
+							Анализ
+<!---->						</div>
+					</div>
+					<div class="b-submenu-subitem js-menu-item g-unselectable" data-route="side.sessions|side.sheet" data-tab="" data-id="">
+						<div class="b-submenu-subitem-title">
+							Заседания
+<!---->						</div>
+						<div class="b-submenu-subitem-inner g-invisible">
+							Заседания
+<!---->						</div>
+					</div>
+			</div>
+			<div class="b-submenu-subitems b-submenu-subitems--empty js-submenu-subitems js-submenu-subitems--empty b-submenu-subitem--hidden" style="">
+<!---->			</div>
+	</span>
+</div>
+				<div id="ember2015" class="ember-view b-extra_menu_toggler js-extra_menu_toggler g-unselectable g-print-hidden"><div id="ember2022" class="ember-view b-tooltip b-extra_menu js-tooltip js-tooltip--menu g-hidden"><ul class="b-tooltip-list js-tooltip-list">
+		<li id="ember2029" class="ember-view b-tooltip-item b-tooltip-item--icon b-tooltip-item--disabled js-tooltip-item g-hidden">Добавить все учрежденные компании в подборку
+<div class="b-tooltip-item-icon b-tooltip-item-icon--watch"></div>
+</li>
+		<li id="ember2036" class="ember-view b-tooltip-item b-tooltip-item--icon js-tooltip-item g-hidden">	Скрыть завершенные
+<div class="b-tooltip-item-icon b-tooltip-item-icon--visibility"></div>
+</li>
+		<li id="ember2043" class="ember-view b-tooltip-item b-tooltip-item--icon js-tooltip-item g-hidden">	Отображать только заседания
+<div class="b-tooltip-item-icon b-tooltip-item-icon--visibility"></div>
+</li>
+		<li id="ember2050" class="ember-view b-tooltip-item b-tooltip-item--link js-tooltip-item g-hidden"><div class="b-tooltip-item-icon b-tooltip-item-icon--download_calendar"></div>
+<a class="b-tooltip-item-link b-tooltip-item-link--card_menu" target="_blank" href="">
+	Сохранить в Outlook или Google Calendar
+</a>
+</li>
+<!----><!---->		<li id="ember2057" class="ember-view b-tooltip-item b-tooltip-item--icon js-tooltip-item g-hidden">Добавить все дела в подборку
+<div class="b-tooltip-item-icon b-tooltip-item-icon--watch"></div>
+<div class="b-tooltip-item-arrow"></div>
+</li>
+	<li id="ember2064" class="ember-view b-tooltip-item b-tooltip-item--icon b-tooltip-item--arrow js-tooltip-item g-hidden">Настройка колонок таблицы
+<div class="b-tooltip-item-icon b-tooltip-item-icon--columns"></div>
+<div class="b-tooltip-item-arrow"></div>
+</li>
+		<li id="ember2073" class="ember-view b-tooltip-item b-tooltip-item--icon js-tooltip-item b-tooltip-item--icon g-hidden">Скачать список дел в CSV
+<div class="b-tooltip-item-icon b-tooltip-item-icon--download"></div>
+</li>
+		<li id="ember2080" class="ember-view b-tooltip-item b-tooltip-item--icon js-tooltip-item b-tooltip-item--icon g-hidden">Скачать список дел в XLS
+<div class="b-tooltip-item-icon b-tooltip-item-icon--download"></div>
+</li>
+		<li id="ember2087" class="ember-view b-tooltip-item b-tooltip-item--icon js-tooltip-item">Скачать информацию о компании в PDF
+<div class="b-tooltip-item-icon b-tooltip-item-icon--download"></div>
+</li>
+		<li id="ember2094" class="ember-view b-tooltip-item b-tooltip-item--link js-tooltip-item g-hidden"><div class="b-tooltip-item-icon b-tooltip-item-icon--download"></div>
+	<a class="b-tooltip-item-link b-tooltip-item-link--card_menu js-card-download_excerpt js-card-download_excerpt--use_cache" href="/api/Card/Excerpt?inn=7719583594&amp;name=%D0%90%D0%9A%D0%A6%D0%98%D0%9E%D0%9D%D0%95%D0%A0%D0%9D%D0%9E%D0%95+%D0%9E%D0%91%D0%A9%D0%95%D0%A1%D0%A2%D0%92%D0%9E+%22%D0%9F%D0%A0%D0%9E%D0%98%D0%97%D0%92%D0%9E%D0%94%D0%A1%D0%A2%D0%92%D0%95%D0%9D%D0%9D%D0%AB%D0%99+%D0%98+%D0%9D%D0%90%D0%A3%D0%A7%D0%9D%D0%9E-%D0%98%D0%A1%D0%A1%D0%9B%D0%95%D0%94%D0%9E%D0%92%D0%90%D0%A2%D0%95%D0%9B%D0%AC%D0%A1%D0%9A%D0%98%D0%99+%D0%98%D0%9D%D0%A1%D0%A2%D0%98%D0%A2%D0%A3%D0%A2+%D0%9F%D0%9E+%D0%98%D0%9D%D0%96%D0%95%D0%9D%D0%95%D0%A0%D0%9D%D0%AB%D0%9C+%D0%98%D0%97%D0%AB%D0%A1%D0%9A%D0%90%D0%9D%D0%98%D0%AF%D0%9C+%D0%92+%D0%A1%D0%A2%D0%A0%D0%9E%D0%98%D0%A2%D0%95%D0%9B%D0%AC%D0%A1%D0%A2%D0%92%D0%95%22&amp;shortName=%D0%90%D0%9E+%22%D0%9F%D0%9D%D0%98%D0%98%D0%98%D0%A1%22&amp;address=105187%2C+%D0%93%D0%9E%D0%A0%D0%9E%D0%94+%D0%9C%D0%9E%D0%A1%D0%9A%D0%92%D0%90%2C+%D0%9F%D0%A0%D0%9E%D0%95%D0%97%D0%94+%D0%9E%D0%9A%D0%A0%D0%A3%D0%96%D0%9D%D0%9E%D0%99%2C+%D0%94.++18&amp;ogrn=1067746359086&amp;okpo=2494727&amp;isUnique=false&amp;isBranch=false&amp;organizationId=&amp;organizationDictId=&amp;storageId=1792216&amp;isNotPrecise=&amp;headFio=&amp;statusId=0&amp;registrationDate=2006-03-09&amp;useCache=true">
+		Скачать текущую выписку
+	</a>
+</li>
+	<li id="ember2101" class="ember-view b-tooltip-item b-tooltip-item--icon js-tooltip-item g-hidden">Обновить данные на схеме
+<div class="b-tooltip-item-icon b-tooltip-item-icon--update"></div>
+</li>
+	<li id="ember2108" class="ember-view b-tooltip-item b-tooltip-item--icon js-tooltip-item g-hidden">Открыть сохраненную схему
+<div class="b-tooltip-item-icon b-tooltip-item-icon--load"></div>
+<div class="b-tooltip-item-arrow"></div>
+</li>
+	<li id="ember2115" class="ember-view b-tooltip-item b-tooltip-item--icon js-tooltip-item g-hidden">Сохранить текущую схему
+<div class="b-tooltip-item-icon b-tooltip-item-icon--save"></div>
+<div class="b-tooltip-item-arrow"></div>
+</li>
+	<li id="ember2124" class="ember-view b-tooltip-item b-tooltip-item--icon js-tooltip-item g-hidden">Скачать текущую схему в PNG
+<div class="b-tooltip-item-icon b-tooltip-item-icon--download"></div>
+</li>
+</ul>
+</div>
+	<div id="ember2131" class="ember-view b-tooltip b-tooltip--folders b-tooltip--fix_position js-tooltip js-tooltip--folders"><ul class="b-tooltip-list js-tooltip-list">
+<!----><!----></ul>
+		<div class="b-tooltip-item b-tooltip-item--add b-tooltip-item--single">
+			<label>
+				<div id="ember2138" class="ember-view"><input id="ember2146" placeholder="Добавить подборку" autocomplete="off" type="text" class="ui-textbox ember-view ember-text-field">
+<!----><div class="b-toggler-spin js-toggler-spin g-hidden"></div>
+</div>
+						<div class="b-tooltip-item-icon b-tooltip-item-icon--add"></div>
+			</label>
+		</div>
+</div>
+	<div id="ember2147" class="ember-view b-tooltip b-tooltip--folders b-tooltip--fix_position js-tooltip js-tooltip--folders"><ul class="b-tooltip-list js-tooltip-list">
+<!----><!----></ul>
+		<div class="b-tooltip-item b-tooltip-item--add b-tooltip-item--single">
+			<label>
+				<div id="ember2148" class="ember-view"><input id="ember2149" placeholder="Добавить подборку" autocomplete="off" type="text" class="ui-textbox ember-view ember-text-field">
+<!----><div class="b-toggler-spin js-toggler-spin g-hidden"></div>
+</div>
+						<div class="b-tooltip-item-icon b-tooltip-item-icon--add"></div>
+			</label>
+		</div>
+</div>
+<div id="ember2156" class="ember-view b-tooltip b-tooltip--business_print b-tooltip--business_print_accounting b-tooltip--fix_position js-tooltip js-tooltip--accounting"><ul class="b-tooltip-list js-tooltip-list">
+<!----></ul>
+<div class="b-tooltip-item-control">
+	<div class="b-tooltip-item-control-button js-tooltip-item-control-button--back g-clickable">
+		Назад
+	</div>
+	<div class="b-tooltip-item-control-button b-tooltip-item-control-button--right js-tooltip-item-control-button--apply g-clickable">
+		Скачать
+	</div>
+</div>
+</div>
+<div id="ember2163" class="ember-view b-tooltip b-tooltip--columns b-tooltip--fix_position js-tooltip js-tooltip--columns"><ul class="b-tooltip-list js-tooltip-list">
+<!----></ul>
+<div class="b-tooltip-item-control">
+	<div class="b-tooltip-item-control-button js-tooltip-item-control-button--back g-clickable">
+		Назад
+	</div>
+	<div class="b-tooltip-item-control-button b-tooltip-item-control-button--right js-tooltip-item-control-button--apply g-clickable">
+		Применить
+	</div>
+</div>
+</div>
+<div id="ember2170" class="ember-view b-tooltip b-tooltip--graph_save b-tooltip--fix_position js-tooltip js-tooltip--graph_save"><ul class="b-tooltip-list js-tooltip-list">
+	<div class="b-tooltip-form">
+		<div class="b-tooltip-name b-tooltip-name--subtitle">
+			Название схемы
+		</div>
+		<div class="b-tooltip-input js-tooltip-input">
+			<input id="ember2171" autocomplete="off" type="text" class="ui-textbox ember-view ember-text-field">
+		</div>
+	</div>
+</ul>
+<div class="b-tooltip-item-control">
+	<div class="b-tooltip-item-control-button b-tooltip-item-control-button--back js-tooltip-item-control-button--back g-clickable">
+		Назад
+	</div>
+	<div class="b-tooltip-item-control-button b-tooltip-item-control-button--right js-tooltip-item-control-button--save g-clickable">
+		Сохранить
+	</div>
+</div>
+</div>
+<div id="ember2178" class="ember-view b-tooltip b-tooltip--graph_load b-tooltip--fix_position js-tooltip js-tooltip--graph_load"><ul class="b-tooltip-list js-tooltip-list">
+<!----></ul>
+<div class="b-tooltip-item-control">
+	<div class="b-tooltip-item-control-button b-tooltip-item-control-button--back js-tooltip-item-control-button--back g-clickable">
+		Назад
+	</div>
+</div>
+</div>
+</div>
+		</div>
+		<div>
+			<div class="b-card-filter g-hidden g-print-hidden js-card-filter">
+				<div id="ember2185" class="ember-view b-filter g-clearfix"><!---->	<div id="ember2378" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--tuner" data-name="tuner">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Еще фильтры</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Еще фильтры
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2380" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--sessionsdate b-strainer-container--active" data-name="sessionsDate">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Дата</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+							<span class="g-capitalize">на</span>
+							<span>30</span>
+							<span>дней</span>
+		</div>
+<!----></div>
+</div>
+	<div id="ember2382" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--sidetype b-strainer-container--disabled" data-name="sideType">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Тип участия</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Все типы участия
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2384" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--generalcasetypes" data-name="generalCaseTypes">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Вид спора</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Все виды споров
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2386" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--instance b-strainer-container--disabled" data-name="instance">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Инстанции</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Все инстанции
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2388" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--court b-strainer-container--disabled" data-name="court">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Суды</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Все суды
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2390" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--generalcourt" data-name="generalCourt">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Суды</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Все суды
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2392" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--judge b-strainer-container--disabled" data-name="judge">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Судьи</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Все судьи
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2394" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--date b-strainer-container--disabled" data-name="date">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Дата</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						За все время
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2396" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--statsdate b-strainer-container--active" data-name="statsDate">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Дата</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+						За год
+		</div>
+<!----></div>
+</div>
+	<div id="ember2398" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--opponent b-strainer-container--disabled" data-name="opponent">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Оппоненты</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Все оппоненты
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2400" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--singleparticipant" data-name="singleParticipant">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Участник</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Все участники
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2402" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--executionsdate" data-name="executionsDate">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Дата производства</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Любая дата производства
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2404" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--executionobject" data-name="executionObject">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Предмет исполнения</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+			<div class="b-strainer-value b-strainer-value--loading g-textoverflow g-unselectable">
+				Загрузка<span class="g-dot g-dot--first">.</span><span class="g-dot g-dot--second">.</span><span class="g-dot g-dot--third">.</span>
+			</div>
+<!----></div>
+</div>
+	<div id="ember2406" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--executionsum" data-name="executionSum">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Сумма долга</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Любая сумма
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2408" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--finishedstatus" data-name="finishedStatus">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Статус дела</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Любой статус
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2410" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--caseresults b-strainer-container--disabled" data-name="caseResults">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Исход дела</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Любой исход дела
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2412" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--responsibleusers" data-name="responsibleUsers">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Ответственные</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Указать ответственного
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2414" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--analysismeasure b-strainer-container--active" data-name="analysisMeasure">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Единица измерения</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+						Заявленные требования
+		</div>
+<!----></div>
+</div>
+	<div id="ember2416" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--analysisperiod b-strainer-container--active" data-name="analysisPeriod">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Период</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+						Помесячно
+		</div>
+<!----></div>
+</div>
+	<div id="ember2418" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--connectionssettingsfilter" data-name="connectionsSettingsFilter">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Связи</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Связи
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2420" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--connectionsdatasettingsfilter" data-name="connectionsDataSettingsFilter">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Данные</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Данные
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2422" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--regionslist" data-name="regionsList">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Регион</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Все регионы
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2424" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--capitalsum" data-name="capitalSum">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Уставный капитал</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Любой уставный капитал
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2426" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--historydate" data-name="historyDate">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Дата</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Данные на текущий момент
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2428" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--allokveds" data-name="allOkveds">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">ОКВЭД</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Все виды основной деятельности
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2430" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--companystatuses" data-name="companyStatuses">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Текущий статус</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Любые статусы компаний
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2432" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--accountsdate" data-name="accountsDate">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Дата</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+			<div class="b-strainer-value b-strainer-value--loading g-textoverflow g-unselectable">
+				Загрузка<span class="g-dot g-dot--first">.</span><span class="g-dot g-dot--second">.</span><span class="g-dot g-dot--third">.</span>
+			</div>
+<!----></div>
+</div>
+	<div id="ember2434" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--excerptdate" data-name="excerptDate">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Дата</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Выписка на текущую дату
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2436" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--pledgesdate" data-name="pledgesDate">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Дата уведомления</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Любая дата уведомления
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2438" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--pledgetypes" data-name="pledgeTypes">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Вид объектов залога</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Все виды объектов залога
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2440" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--casestatus" data-name="caseStatus">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Статус дела</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Любой статус
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2442" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--casetypes" data-name="caseTypes">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Вид спора</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Все виды споров
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2444" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--bankruptstage g-hidden" data-name="bankruptStage">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Стадия банкротства</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Все стадии банкротства
+				</span>
+					<span class="b-strainer-value--hidden_empty_value">Все стадии</span>
+		</div>
+<!----></div>
+</div>
+	<div id="ember2446" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--casecategories" data-name="caseCategories">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Категория спора</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Все категории споров
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2448" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--sum" data-name="sum">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Сумма иска</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Любая сумма иска
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+	<div id="ember2450" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--accuracy b-strainer-container--active" data-name="accuracy">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Возможные дела</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+						Точно является участником
+		</div>
+<!----></div>
+</div>
+	<div id="ember2452" class="ember-view b-strainer"><div class="b-strainer-container js-strainer-container b-strainer--arbitrquickfilter" data-name="arbitrQuickFilter">
+	<div class="b-strainer-title g-unselectable">
+		<span class="b-strainer-title-text">Арбитражный управляющий</span><span class="b-strainer-title-colon">:&nbsp;</span>
+	</div>
+		<div class="b-strainer-value g-textoverflow g-unselectable">
+				<span class="b-strainer-value--empty_value">
+						Быстрый фильтр
+				</span>
+<!---->		</div>
+<!----></div>
+</div>
+<div class="b-filter-reset g-unselectable" data-ember-action="2453">
+	Сбросить
+</div>
+	<div class="b-filter-search">
+		<input id="ember2454" placeholder="Быстрый поиск" autocomplete="off" type="text" class="ui-textbox js-filter-search g-print-hidden ember-view ember-text-field">
+		<div class="b-filter-search-print_value g-print-visible">
+			<!---->
+		</div>
+<!---->	</div>
+</div>
+			</div>
+		</div>
+<!---->			<div class="b-card-stats g-hidden">
+				<div class="b-card-stats-loading g-hidden">
+					<div class="b-card-stats-loading-text">
+						<div class="b-card-stats-loading-spin js-cases_stats-spin"></div>
+						Получение статистики по делам<span class="g-dot g-dot--first">.</span><span class="g-dot g-dot--second">.</span><span class="g-dot g-dot--third">.</span>
+					</div>
+				</div>
+						<div class="b-card-stats-undata">
+		Статистика недоступна
+	</div>
+
+			</div>
+		<div class="b-card-stats g-hidden">
+			<div class="b-card-stats-loading g-hidden">
+				<div class="b-card-stats-loading-text">
+					<div class="b-card-stats-loading-spin js-executions_stats-spin"></div>
+					Получение статистики по исполнительным производствам<span class="g-dot g-dot--first">.</span><span class="g-dot g-dot--second">.</span><span class="g-dot g-dot--third">.</span>
+				</div>
+			</div>
+					<div class="b-card-stats-undata">
+		Статистика недоступна
+	</div>
+
+		</div>
+	</div>
+</div>
+
+	<div class="b-card-content b-card-content--info js-card-content">
+		<!---->		<!---->
+	<div class="b-card-title-wrapper js-card-title" style="height: 43px;">
+	<div class="js-card-title-container">
+		<div data-key="CommonInfo" class="b-card-title b-card-title--expandable js-card-title--expandable b-card-title--expanded">
+			Общая информация
+			<div class="b-card-title-button"></div>
+		</div>
+	</div>
+</div>
+<div data-content="CommonInfo" class="b-card-title-content js-card-title-content b-card-title-content--expanded">
+	<table class="b-table b-card-table" cellpadding="0" cellspacing="0">
+		<tbody>
+<!---->				<tr class="b-table-row">
+					<td class="b-table-cell b-card-table-cell--title">
+						<div class="b-cell">
+							Наименование
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							АКЦИОНЕРНОЕ ОБЩЕСТВО "ПРОИЗВОДСТВЕННЫЙ И НАУЧНО-ИССЛЕДОВАТЕЛЬСКИЙ ИНСТИТУТ ПО ИНЖЕНЕРНЫМ ИЗЫСКАНИЯМ В СТРОИТЕЛЬСТВЕ"
+						</div>
+					</td>
+				</tr>
+					<tr class="b-table-row">
+						<td class="b-table-cell b-card-table-cell--title">
+							<div class="b-cell">
+								Сокращенное наименование
+							</div>
+						</td>
+						<td class="b-table-cell">
+							<div class="b-cell">
+								АО "ПНИИИС"
+							</div>
+						</td>
+					</tr>
+<!----><!---->				<tr class="b-table-row">
+						<td class="b-table-cell b-card-table-cell--title" rowspan="3">
+							<div class="b-cell">
+								Прежние названия
+							</div>
+						</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							ОАО "ПРОИЗВОДСТВЕННЫЙ И НАУЧНО-ИССЛЕДОВАТЕЛЬСКИЙ ИНСТИТУТ ПО ИНЖЕНЕРНЫМ ИЗЫСКАНИЯМ В СТРОИТЕЛЬСТВЕ"
+						</div>
+					</td>
+				</tr>
+				<tr class="b-table-row">
+<!---->					<td class="b-table-cell">
+						<div class="b-cell">
+							ОАО "ПНИИИС"
+						</div>
+					</td>
+				</tr>
+				<tr class="b-table-row">
+<!---->					<td class="b-table-cell">
+						<div class="b-cell">
+							АО "ПРОИЗВОДСТВЕННЫЙ И НАУЧНО-ИССЛЕДОВАТЕЛЬСКИЙ ИНСТИТУТ ПО ИНЖЕНЕРНЫМ ИЗЫСКАНИЯМ В СТРОИТЕЛЬСТВЕ"
+						</div>
+					</td>
+				</tr>
+				<tr class="b-table-row">
+					<td class="b-table-cell b-card-table-cell--title">
+						<div class="b-cell">
+							ИНН
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							7719583594
+						</div>
+					</td>
+				</tr>
+				<tr class="b-table-row">
+					<td class="b-table-cell b-card-table-cell--title">
+						<div class="b-cell">
+							ОГРН
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							1067746359086
+						</div>
+					</td>
+				</tr>
+				<tr class="b-table-row">
+					<td class="b-table-cell b-card-table-cell--title">
+						<div class="b-cell">
+							КПП
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							771901001
+						</div>
+					</td>
+				</tr>
+				<tr class="b-table-row">
+					<td class="b-table-cell b-card-table-cell--title">
+						<div class="b-cell">
+							ОКПО
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							02494727
+						</div>
+					</td>
+				</tr>
+<!---->				<tr class="b-table-row">
+					<td class="b-table-cell b-card-table-cell--title">
+						<div class="b-cell">
+							Дата регистрации
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<span class="g-date">09.03.2006</span>
+						</div>
+					</td>
+				</tr>
+				<tr class="b-table-row">
+					<td class="b-table-cell b-card-table-cell--title">
+						<div class="b-cell">
+							Адрес
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<table class="b-table--wide" cellpadding="0" cellspacing="0">
+								<tr>
+									<td>
+										105187, ГОРОД МОСКВА, ПРОЕЗД ОКРУЖНОЙ, Д.  18
+									</td>
+										<td class="b-table-cell--right">
+<!---->													<div class="g-number g-clickable js-same_address_organizations">
+														16 компаний по этому адресу
+													</div>
+										</td>
+								</tr>
+							</table>
+						</div>
+					</td>
+				</tr>
+<!----><!----><!----><!---->				<tr class="b-table-row">
+					<td class="b-table-cell b-card-table-cell--title">
+						<div class="b-cell">
+								Статус компании
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							ДЕЙСТВУЮЩЕЕ
+<!---->						</div>
+					</td>
+				</tr>
+				<tr class="b-table-row">
+					<td class="b-table-cell b-card-table-cell--title">
+						<div class="b-cell">
+							Уставный капитал
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							21 414 000 руб.
+						</div>
+					</td>
+				</tr>
+		</tbody>
+	</table>
+</div>
+<div class="b-card-title-end js-card-title-end"></div>
+
+		<!---->
+			<div class="b-card-title-wrapper js-card-title js-card-title--same_address_organizations" style="height: 43px;">
+		<div class="js-card-title-container">
+			<div data-key="SameAddressOrganizations" class="b-card-title b-card-title--expandable js-card-title--expandable">
+				Другие компании по тому же адресу
+				<div class="b-card-title-button"></div>
+			</div>
+<!---->		</div>
+	</div>
+	<div data-content="SameAddressOrganizations" class="b-card-title-content js-card-title-content">
+			<div class="b-table-header js-table-header">
+	<table class="b-table" cellpadding="0" cellspacing="0">
+		<thead>
+			<tr class="b-table-row">
+				<th class="b-table-cell">
+					<div class="b-cell b-cell--head">
+						Наименование
+					</div>
+				</th>
+				<th class="b-table-cell b-card-table-cell--date">
+					<div class="b-cell b-cell--head">
+						ИНН
+					</div>
+				</th>
+				<th class="b-table-cell b-card-table-cell--chief">
+					<div class="b-cell b-cell--head">
+						Руководитель
+					</div>
+				</th>
+				<th class="b-table-cell b-sides-cell--control g-print-hidden g-clickable g-unselectable js-toggle_comments_in_expand">
+					<div class="b-cell b-cell--head">
+						• • •
+						<div id="ember2464" class="ember-view b-tooltip b-tooltip--toggle_comments js-tooltip js-tooltip--toggle_comments g-hidden"><ul class="b-tooltip-list js-tooltip-list">
+	<li id="ember2473" class="ember-view b-tooltip-item js-tooltip-item">Скрыть все примечания
+</li>
+	<li id="ember2478" class="ember-view b-tooltip-item js-tooltip-item">Показать все примечания
+</li>
+</ul>
+</div>
+					</div>
+				</th>
+			</tr>
+		</thead>
+	</table>
+</div>
+
+		<div class="b-table-preloader b-table-preloader--head g-hidden">
+			<div class="g-preloader"></div>
+		</div>
+		<table class="b-table b-card-table" cellpadding="0" cellspacing="0">
+			<tbody>
+					<tr id="ember2658" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/1157746723177">
+									ООО "КАМЕЛОТ"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--0 js-cell-status--0" data-title="Действующее" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7704325417
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQkdC-0L3QtNCw0YDQtdC90LrQviDQmNCz0L7RgNGMINCQ0L3QsNGC0L7Qu9GM0LXQstC40YcifQ">
+									Бондаренко Игорь Анатольевич
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2659" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+					<tr id="ember2660" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/5117746060812">
+									ООО "ГЕОДАТА ПЛЮС"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--0 js-cell-status--0" data-title="Действующее" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7719800270
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQotC-0YDQsdC40L3QsCDQldC60LDRgtC10YDQuNC90LAg0JDQvdC00YDQtdC10LLQvdCwIn0">
+									Торбина Екатерина Андреевна
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2661" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+					<tr id="ember2662" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/1117746951387">
+									ООО "ГЕОМАРКЕТИНГ"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--0 js-cell-status--0" data-title="Действующее" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7719796352
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQotC-0YDQsdC40L3QsCDQldC60LDRgtC10YDQuNC90LAg0JDQvdC00YDQtdC10LLQvdCwIn0">
+									Торбина Екатерина Андреевна
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2663" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+					<tr id="ember2664" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/1167746085737">
+									ООО "ДОРСТРОЙПРИБОР"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--0 js-cell-status--0" data-title="Действующее" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7719436455
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQl9GD0LHQutC-0LLQsCDQktC10YDQsCDQmNCy0LDQvdC-0LLQvdCwIn0">
+									Зубкова Вера Ивановна
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2665" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+					<tr id="ember2666" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/1087746515394">
+									ООО "ЛАНИТ"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--0 js-cell-status--0" data-title="Действующее" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7719677813
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQnNCw0L4g0JHQvtGA0LXQuSDQoNC-0YIifQ">
+									Мао Борей Рот
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2667" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+					<tr id="ember2668" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/1067799027977">
+									"АИИС"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--0 js-cell-status--0" data-title="Действующее" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7719286785
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQnNCw0YLRgNC-0YHQvtCy0LAg0JDQu9GM0LHQuNC90LAg0JLQu9Cw0LTQuNC80LjRgNC-0LLQvdCwIn0">
+									Матросова Альбина Владимировна
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2669" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+					<tr id="ember2670" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/1127799026255">
+									СОЮЗ ИЗЫСКАТЕЛЕЙ
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--0 js-cell-status--0" data-title="Действующее" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7719290260
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQndC40LrQvtC70LDQtdCy0LAg0JjRgNC40L3QsCDQkNC90LDRgtC-0LvRjNC10LLQvdCwIn0">
+									Николаева Ирина Анатольевна
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2671" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+					<tr id="ember2672" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/1047796091111">
+									ООО "ИД "СТРОИТЕЛЬСТВО И БИЗНЕС"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--1 js-cell-status--1" data-title="Деятельность прекращена" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7719508519
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQmNCy0LDQvdC-0LIg0JrQuNGA0LjQu9C7INCS0LjQutGC0L7RgNC-0LLQuNGHIn0">
+									Иванов Кирилл Викторович
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2673" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+					<tr id="ember2674" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/1037719038037">
+									ЗАО "ИНФОСТРОЙ"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--1 js-cell-status--1" data-title="Деятельность прекращена" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7719276970
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQnNC10YnQtdGA0Y_QutC-0LIg0J7Qu9C10LMg0JjQstCw0L3QvtCy0LjRhyJ9">
+									Мещеряков Олег Иванович
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2675" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+					<tr id="ember2676" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/1027719014465">
+									АНО УЦПК "ПНИИИС-ЗНАНИЯ"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--1 js-cell-status--1" data-title="Деятельность прекращена" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7719259573
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQm9Cw0YDQuNC90LAg0KLQsNGC0YzRj9C90LAg0JDQvdCw0YLQvtC70YzQtdCy0L3QsCJ9">
+									Ларина Татьяна Анатольевна
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2677" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+					<tr id="ember2678" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/1047796893781">
+									ООО "БЛИЦАРТ"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--1 js-cell-status--1" data-title="Деятельность прекращена" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7719534540
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQn9C-0LvRjtGF0L7QsiDQrtGA0LjQuSDQktC40LrRgtC-0YDQvtCy0LjRhyJ9">
+									Полюхов Юрий Викторович
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2679" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+					<tr id="ember2680" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/1027739275651">
+									"САНТЕХ НИИ ПРОЕКТ"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--1 js-cell-status--1" data-title="Деятельность прекращена" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7719021690
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQqNCw0YDQuNC_0L7QsiDQkNC70YzQsdC10YDRgiDQr9C60YPQsdC-0LLQuNGHIn0">
+									Шарипов Альберт Якубович
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2681" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+					<tr id="ember2682" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/1027700234869">
+									ФГУП "ПНИИИС"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--1 js-cell-status--1" data-title="Деятельность прекращена" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7719046173
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQkdC-0LPQtNCw0L3QvtCyINCc0LjRhdCw0LjQuyDQmNCz0L7RgNC10LLQuNGHIn0">
+									Богданов Михаил Игоревич
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2683" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+					<tr id="ember2684" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/5077746496174">
+									АО "САНТЕХНИИПРОЕКТ"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--2 js-cell-status--2" data-title="Находится в&amp;nbsp;процессе ликвидации или реорганизации" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7719628580
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQn9C-0LTQvtC_0YDQuNCz0L7RgNCwINCS0LjRgtCw0LvQuNC5INCS0LjRgtCw0LvRjNC10LLQuNGHIn0">
+									Подопригора Виталий Витальевич
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2685" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+					<tr id="ember2686" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/1027739910439">
+									ФГУ "ЮЖНАЯ ДИРЕКЦИЯ"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--2 js-cell-status--2" data-title="Находится в&amp;nbsp;процессе ликвидации или реорганизации" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7703001427
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQmtGD0LfQvdC10YbQvtCyINCS0LvQsNC00LjQvNC40YAg0JDQu9C10LrRgdCw0L3QtNGA0L7QstC40YcifQ">
+									Кузнецов Владимир Александрович
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2687" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+			</tbody>
+		</table>
+<!---->	</div>
+	<div class="b-card-title-end js-card-title-end"></div>
+
+		<!---->
+				<div class="b-card-title-wrapper js-card-title" style="height: 43px;">
+			<div class="js-card-title-container">
+				<div data-key="Chiefs" class="b-card-title b-card-title--expandable js-card-title--expandable">
+					Руководители
+					<div class="b-card-title-button"></div>
+				</div>
+<!---->			</div>
+		</div>
+		<div data-content="Chiefs" class="b-card-title-content js-card-title-content">
+				<div class="b-table-header js-table-header">
+	<table class="b-table" cellpadding="0" cellspacing="0">
+		<thead>
+			<tr class="b-table-row">
+				<th class="b-table-cell">
+					<div class="b-cell b-cell--head">
+						Имя
+					</div>
+				</th>
+				<th class="b-table-cell b-card-table-cell--inn">
+					<div class="b-cell b-cell--head">
+						ИНН
+					</div>
+				</th>
+				<th class="b-table-cell b-card-table-cell--post">
+					<div class="b-cell b-cell--head">
+						Должность
+					</div>
+				</th>
+				<th class="b-table-cell b-card-table-cell--inclusion_date">
+					<div class="b-cell b-cell--head">
+						Дата вступления
+					</div>
+				</th>
+				<th class="b-table-cell b-card-table-cell--date_wide">
+					<div class="b-cell b-cell--head">
+						Статус
+					</div>
+				</th>
+				<th class="b-table-cell b-sides-cell--control g-print-hidden g-clickable g-unselectable js-toggle_comments_in_expand">
+					<div class="b-cell b-cell--head">
+						• • •
+						<div id="ember2480" class="ember-view b-tooltip b-tooltip--toggle_comments js-tooltip js-tooltip--toggle_comments g-hidden"><ul class="b-tooltip-list js-tooltip-list">
+	<li id="ember2481" class="ember-view b-tooltip-item js-tooltip-item">Скрыть все примечания
+</li>
+	<li id="ember2482" class="ember-view b-tooltip-item js-tooltip-item">Показать все примечания
+</li>
+</ul>
+</div>
+					</div>
+				</th>
+			</tr>
+		</thead>
+	</table>
+</div>
+
+			<div class="b-table-preloader b-table-preloader--head g-hidden">
+				<div class="g-preloader"></div>
+			</div>
+			<table class="b-table b-card-table" cellpadding="0" cellspacing="0">
+				<tbody>
+						<tr id="ember2607" class="ember-view b-table-row"><td class="b-table-cell">
+	<div class="b-cell">
+		<div class="b-cell-index">
+			1.&nbsp;
+		</div>
+		<div class="b-cell-index_text">
+				<a target="_blank" href="#side/person/eyJpbm4iOiI1NDA4MTE4OTM0MzUiLCJwZXJzb24iOiLQotCw0YDQsNC90LXQvdC60L4g0JrQvtC90YHRgtCw0L3RgtC40L0g0JLQu9Cw0LTQuNC80LjRgNC-0LLQuNGHIn0">
+					Тараненко Константин Владимирович
+				</a>
+		</div>
+		<!---->
+	</div>
+</td>
+<td class="b-table-cell b-card-table-cell--inn">
+	<div class="b-cell">
+		540811893435
+	</div>
+</td>
+<td class="b-table-cell b-card-table-cell--post">
+	<div class="b-cell">
+			Генеральный директор
+	</div>
+</td>
+<td class="b-table-cell b-card-table-cell--inclusion_date">
+	<div class="b-cell">
+			<span class="g-date">
+				02.12.2016
+			</span>
+	</div>
+</td>
+<td class="b-table-cell b-card-table-cell--date_wide">
+	<div class="b-cell">
+		Действующий
+	</div>
+</td>
+<td class="b-table-cell b-sides-cell--control g-print-hidden">
+	<div class="b-cell">
+		<div class="b-cell-control b-cell-control--single">
+			<div class="b-cell-control-container">
+				<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+					<div id="ember2608" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить персону в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</td>
+</tr>
+						<tr id="ember2610" class="ember-view b-table-row"><td class="b-table-cell">
+	<div class="b-cell">
+		<div class="b-cell-index">
+			2.&nbsp;
+		</div>
+		<div class="b-cell-index_text">
+				<a target="_blank" href="#side/person/eyJpbm4iOiI1MDA0MDIxNDI0MDAiLCJwZXJzb24iOiLQmtGD0YDRhtC10YAg0JzQuNGF0LDQuNC7INCT0YDQuNCz0L7RgNGM0LXQstC40YcifQ">
+					Курцер Михаил Григорьевич
+				</a>
+		</div>
+		<!---->
+	</div>
+</td>
+<td class="b-table-cell b-card-table-cell--inn">
+	<div class="b-cell">
+		500402142400
+	</div>
+</td>
+<td class="b-table-cell b-card-table-cell--post">
+	<div class="b-cell">
+			Генеральный директор
+	</div>
+</td>
+<td class="b-table-cell b-card-table-cell--inclusion_date">
+	<div class="b-cell">
+			<span class="g-date">
+				06.08.2015
+			</span>
+	</div>
+</td>
+<td class="b-table-cell b-card-table-cell--date_wide">
+	<div class="b-cell">
+		Прежний
+	</div>
+</td>
+<td class="b-table-cell b-sides-cell--control g-print-hidden">
+	<div class="b-cell">
+		<div class="b-cell-control b-cell-control--single">
+			<div class="b-cell-control-container">
+				<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+					<div id="ember2611" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить персону в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</td>
+</tr>
+						<tr id="ember2613" class="ember-view b-table-row"><td class="b-table-cell">
+	<div class="b-cell">
+		<div class="b-cell-index">
+			3.&nbsp;
+		</div>
+		<div class="b-cell-index_text">
+				<a target="_blank" href="#side/person/eyJpbm4iOiI3NzMxMDA3NzY4MTUiLCJwZXJzb24iOiLQodC10LzQvtGH0LrQuNC9INCS0LvQsNC00LjQvNC40YAg0JDQu9C10LrRgdCw0L3QtNGA0L7QstC40YcifQ">
+					Семочкин Владимир Александрович
+				</a>
+		</div>
+		<!---->
+	</div>
+</td>
+<td class="b-table-cell b-card-table-cell--inn">
+	<div class="b-cell">
+		773100776815
+	</div>
+</td>
+<td class="b-table-cell b-card-table-cell--post">
+	<div class="b-cell">
+			Генеральный директор
+	</div>
+</td>
+<td class="b-table-cell b-card-table-cell--inclusion_date">
+	<div class="b-cell">
+			<span class="g-date">
+				26.05.2014
+			</span>
+	</div>
+</td>
+<td class="b-table-cell b-card-table-cell--date_wide">
+	<div class="b-cell">
+		Прежний
+	</div>
+</td>
+<td class="b-table-cell b-sides-cell--control g-print-hidden">
+	<div class="b-cell">
+		<div class="b-cell-control b-cell-control--single">
+			<div class="b-cell-control-container">
+				<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+					<div id="ember2614" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить персону в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</td>
+</tr>
+						<tr id="ember2616" class="ember-view b-table-row"><td class="b-table-cell">
+	<div class="b-cell">
+		<div class="b-cell-index">
+			4.&nbsp;
+		</div>
+		<div class="b-cell-index_text">
+				<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQkdC-0LPQtNCw0L3QvtCyINCc0LjRhdCw0LjQuyDQmNCz0L7RgNC10LLQuNGHIn0">
+					Богданов Михаил Игоревич
+				</a>
+		</div>
+		<!---->
+	</div>
+</td>
+<td class="b-table-cell b-card-table-cell--inn">
+	<div class="b-cell">
+		<!---->
+	</div>
+</td>
+<td class="b-table-cell b-card-table-cell--post">
+	<div class="b-cell">
+			Генеральный директор
+	</div>
+</td>
+<td class="b-table-cell b-card-table-cell--inclusion_date">
+	<div class="b-cell">
+			<span class="g-inactive">Дата неизвестна</span>
+	</div>
+</td>
+<td class="b-table-cell b-card-table-cell--date_wide">
+	<div class="b-cell">
+		Прежний
+	</div>
+</td>
+<td class="b-table-cell b-sides-cell--control g-print-hidden">
+	<div class="b-cell">
+		<div class="b-cell-control b-cell-control--single">
+			<div class="b-cell-control-container">
+				<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+					<div id="ember2617" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить персону в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</td>
+</tr>
+				</tbody>
+			</table>
+<!---->		</div>
+		<div class="b-card-title-end js-card-title-end"></div>
+
+		<!---->
+			<div class="b-card-title-wrapper js-card-title" style="height: 43px;">
+		<div class="js-card-title-container">
+			<div data-key="Founders" class="b-card-title b-card-title--expandable js-card-title--expandable">
+				Учредители
+				<div class="b-card-years">
+<!---->						<div data-key="Multistat" class="b-card-year b-card-year--active g-unselectable js-card--founder_type">
+							Росстат
+						</div>
+				</div>
+				<div class="b-card-title-button"></div>
+			</div>
+<!---->		</div>
+	</div>
+	<div data-content="Founders" class="b-card-title-content js-card-title-content">
+			<div class="b-table-header js-table-header">
+	<table class="b-table" cellpadding="0" cellspacing="0">
+		<thead>
+			<tr class="b-table-row">
+				<th class="b-table-cell">
+					<div class="b-cell b-cell--head">
+						Наименование
+					</div>
+				</th>
+				<th class="b-table-cell b-card-table-cell--inn">
+					<div class="b-cell b-cell--head">
+						ИНН
+					</div>
+				</th>
+				<th class="b-table-cell b-card-table-cell--result">
+					<div class="b-cell b-cell--head">
+						Доля в уставном капитале
+					</div>
+				</th>
+				<th class="b-table-cell b-card-table-cell--status">
+					<div class="b-cell b-cell--head">
+						Дата изменения доли
+					</div>
+				</th>
+				<th class="b-table-cell b-card-table-cell--date_wide">
+					<div class="b-cell b-cell--head">
+						Статус
+					</div>
+				</th>
+				<th class="b-table-cell b-sides-cell--control g-print-hidden g-clickable g-unselectable js-toggle_comments_in_expand">
+					<div class="b-cell b-cell--head">
+						• • •
+						<div id="ember2484" class="ember-view b-tooltip b-tooltip--toggle_comments js-tooltip js-tooltip--toggle_comments g-hidden"><ul class="b-tooltip-list js-tooltip-list">
+	<li id="ember2485" class="ember-view b-tooltip-item js-tooltip-item">Скрыть все примечания
+</li>
+	<li id="ember2486" class="ember-view b-tooltip-item js-tooltip-item">Показать все примечания
+</li>
+</ul>
+</div>
+					</div>
+				</th>
+			</tr>
+		</thead>
+	</table>
+</div>
+
+<!----><!---->			<div class="js-card-founders">
+						<table class="b-table b-card-table" cellpadding="0" cellspacing="0">
+							<tbody>
+									<tr id="ember2625" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+					<tr class="b-table-row">
+							<td class="b-table-cell" rowspan="1">
+								<div class="b-cell">
+									<div class="b-cell-index">
+										1.&nbsp;
+									</div>
+									<div class="b-cell-index_text">
+											<a target="_blank" href="#side/info/1087746829994">
+													РОСИМУЩЕСТВО
+											</a>
+									</div>
+									<div class="b-cell-status b-cell-status--0 js-cell-status--0" data-title="Действующее" original-title=""></div>
+									<!---->
+								</div>
+							</td>
+							<td class="b-table-cell b-card-table-cell--inn" rowspan="1">
+								<div class="b-cell">
+									7710723134
+								</div>
+							</td>
+						<td class="b-table-cell b-card-table-cell--result">
+							<div class="b-cell">
+								<table class="b-table--wide g-print-hidden" cellpadding="0" cellspacing="0">
+									<tr>
+										<td>
+												21,4 млн. р.
+										</td>
+											<td class="b-table-cell--right">
+												<span class="g-inactive">100.00%</span>
+											</td>
+									</tr>
+								</table>
+								<div class="g-print-visible">
+									<div>
+											21,4 млн. р.
+									</div>
+										<div class="g-inactive">100.00%</div>
+								</div>
+							</div>
+						</td>
+						<td class="b-table-cell b-card-table-cell--status">
+							<div class="b-cell">
+									<span class="g-inactive">Дата неизвестна</span>
+							</div>
+						</td>
+							<td class="b-table-cell b-card-table-cell--date_wide" rowspan="1">
+								<div class="b-cell">
+										Действующий
+								</div>
+							</td>
+							<td class="b-table-cell b-sides-cell--control g-print-hidden" rowspan="1">
+								<div class="b-cell">
+									<div class="b-cell-control b-cell-control--single">
+										<div class="b-cell-control-container">
+												<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+													<div id="ember2627" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+												</div>
+										</div>
+									</div>
+								</div>
+<!---->							</td>
+					</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+							</tbody>
+						</table>
+<!---->			</div>
+	</div>
+	<div class="b-card-title-end js-card-title-end"></div>
+
+			<div class="b-card-title-wrapper js-card-title" style="height: 43px;">
+		<div class="js-card-title-container">
+			<div data-key="Activities" class="b-card-title b-card-title--expandable js-card-title--expandable">
+				Виды деятельности
+				<div class="b-card-years">
+<!---->						<div class="b-card-year b-card-year--active g-unselectable js-card--okved_type">
+							ОКВЭД 2
+						</div>
+				</div>
+				<div class="b-card-title-button"></div>
+			</div>
+<!---->		</div>
+	</div>
+	<div data-content="Activities" class="b-card-title-content js-card-title-content">
+			<div class="b-table-header js-table-header ">
+	<table class="b-table" cellpadding="0" cellspacing="0">
+		<thead>
+			<tr class="b-table-row">
+				<th class="b-table-cell b-card-table-cell--date">
+					<div class="b-cell b-cell--head">
+						Код ОКВЭД
+					</div>
+				</th>
+				<th class="b-table-cell">
+					<div class="b-cell b-cell--head">
+						Вид деятельности (по данным ФНС)
+					</div>
+				</th>
+				<th class="b-table-cell b-card-table-cell--date">
+					<div class="b-cell b-cell--head">
+						Дата внесения
+					</div>
+				</th>
+				<th class="b-table-cell b-card-table-cell--grn">
+					<div class="b-cell b-cell--head">
+						ГРН
+					</div>
+				</th>
+			</tr>
+		</thead>
+	</table>
+</div>
+
+<!----><!---->			<div class="js-card-okveds ">
+						<table class="b-table b-card-table" cellpadding="0" cellspacing="0">
+							<tbody>
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				71.12.45
+					<div class="g-inactive">Основной</div>
+			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Инженерные изыскания в строительстве
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				06.10
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Добыча сырой нефти и нефтяного (попутного) газа
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				08.1
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Добыча камня, песка и глины
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				08.11
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Добыча декоративного и строительного камня, известняка, гипса, мела и сланцев
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				08.11.2
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Добыча и первичная обработка известняка и гипсового камня
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				08.12
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Разработка гравийных и песчаных карьеров, добыча глины и каолина
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				09.10
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Предоставление услуг в области добычи нефти и природного газа
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				09.10.2
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Предоставление услуг по монтажу, ремонту и демонтажу буровых вышек
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				18.1
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Деятельность полиграфическая и предоставление услуг в этой области
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				18.12
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Прочие виды полиграфической деятельности
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				18.14
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Деятельность брошюровочно-переплетная и отделочная и сопутствующие услуги
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				19.20.2
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Разделение и извлечение фракций из нефтяного (попутного) газа
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				26.51
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Производство инструментов и приборов для измерения, тестирования и навигации
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				26.51.1
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Производство навигационных, метеорологических, геодезических, геофизических и аналогичного типа приборов, аппаратуры и инструментов
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				26.51.5
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Производство приборов для контроля прочих физических величин
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				26.51.6
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Производство прочих приборов, датчиков, аппаратуры и инструментов для измерения, контроля и испытаний
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				26.51.8
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Производство частей приборов и инструментов для навигации, управления, измерения, контроля, испытаний и прочих целей
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				29.10.5
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Производство автомобилей специального назначения
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				32.12
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Производство ювелирных изделий и аналогичных изделий
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				32.12.4
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Обработка драгоценных, полудрагоценных, поделочных и синтетических камней, кроме алмазов
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				32.12.5
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Производство ювелирных изделий, медалей из драгоценных металлов и драгоценных камней
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				33.13
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Ремонт электронного и оптического оборудования
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				36.00
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Забор, очистка и распределение воды
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				36.00.1
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Забор и очистка воды для питьевых и промышленных нужд
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				36.00.2
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Распределение воды для питьевых и промышленных нужд
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				37.00
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Сбор и обработка сточных вод
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				38.1
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Сбор отходов
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				38.2
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Обработка и утилизация отходов
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				41.2
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Строительство жилых и нежилых зданий
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+										<tr class="b-table-row">
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				41.20
+<!---->			</div>
+		</td>
+		<td class="b-table-cell">
+			<div class="b-cell">
+				Строительство жилых и нежилых зданий
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--date">
+			<div class="b-cell">
+				<span class="g-date">
+					09.03.2006
+				</span>
+			</div>
+		</td>
+		<td class="b-table-cell b-card-table-cell--grn">
+			<div class="b-cell">
+				1067746359086
+			</div>
+		</td>
+	</tr>
+
+							</tbody>
+						</table>
+							<div class="b-table-more g-unselectable " data-ember-action="2593">
+									Показать еще
+							</div>
+			</div>
+	</div>
+	<div class="b-card-title-end js-card-title-end"></div>
+
+		<!---->
+		<!---->
+
+	</div>
+	<div class="b-card-content b-card-content--risks js-card-content js-card-content--risks g-hidden">
+			<div class="b-card-title-wrapper js-card-title">
+		<div class="js-card-title-container">
+			<div data-block="ManyAddressRegistrations" class="b-card-title b-card-title--expandable js-card-title--expandable">
+				Массовый адрес регистрации •
+					<span class="b-card-title-count">
+						16
+					</span>
+					<span class="b-card-title-count b-card-title-count--fns">
+						11
+					</span>
+				<div class="b-card-years">
+						<div data-key="Casebook" class="b-card-year b-card-year--active g-unselectable js-card--risks_same_address">
+							Casebook
+						</div>
+						<div data-key="Fns" class="b-card-year g-unselectable js-card--risks_same_address">
+							ФНС
+						</div>
+				</div>
+					<div class="b-card-title-button"></div>
+			</div>
+		</div>
+	</div>
+	<div class="b-card-title-content js-card-title-content">
+		<div class="b-table-header js-table-header">
+	<table class="b-table" cellpadding="0" cellspacing="0">
+		<thead>
+			<tr class="b-table-row">
+				<th class="b-table-cell">
+					<div class="b-cell b-cell--head">
+						Наименование
+					</div>
+				</th>
+				<th class="b-table-cell b-card-table-cell--date">
+					<div class="b-cell b-cell--head">
+						ИНН
+					</div>
+				</th>
+				<th class="b-table-cell b-card-table-cell--chief">
+					<div class="b-cell b-cell--head">
+						Руководитель
+					</div>
+				</th>
+				<th class="b-table-cell b-sides-cell--control g-print-hidden g-clickable g-unselectable js-toggle_comments_in_expand">
+					<div class="b-cell b-cell--head">
+						• • •
+						<div id="ember2690" class="ember-view b-tooltip b-tooltip--toggle_comments js-tooltip js-tooltip--toggle_comments g-hidden"><ul class="b-tooltip-list js-tooltip-list">
+	<li id="ember2691" class="ember-view b-tooltip-item js-tooltip-item">Скрыть все примечания
+</li>
+	<li id="ember2692" class="ember-view b-tooltip-item js-tooltip-item">Показать все примечания
+</li>
+</ul>
+</div>
+					</div>
+				</th>
+			</tr>
+		</thead>
+	</table>
+</div>
+
+			<div class="js-card-risks_same_address_list">
+				<table class="b-table b-card-table" cellpadding="0" cellspacing="0">
+					<tbody>
+							<tr id="ember2694" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/1067746359086">
+									АО "ПНИИИС"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--0 js-cell-status--0" data-title="Действующее" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7719583594
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQotCw0YDQsNC90LXQvdC60L4g0JrQvtC90YHRgtCw0L3RgtC40L0g0JLQu9Cw0LTQuNC80LjRgNC-0LLQuNGHIn0">
+									Тараненко Константин Владимирович
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2695" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+							<tr id="ember2697" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/1157746723177">
+									ООО "КАМЕЛОТ"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--0 js-cell-status--0" data-title="Действующее" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7704325417
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQkdC-0L3QtNCw0YDQtdC90LrQviDQmNCz0L7RgNGMINCQ0L3QsNGC0L7Qu9GM0LXQstC40YcifQ">
+									Бондаренко Игорь Анатольевич
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2698" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+							<tr id="ember2700" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/5117746060812">
+									ООО "ГЕОДАТА ПЛЮС"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--0 js-cell-status--0" data-title="Действующее" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7719800270
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQotC-0YDQsdC40L3QsCDQldC60LDRgtC10YDQuNC90LAg0JDQvdC00YDQtdC10LLQvdCwIn0">
+									Торбина Екатерина Андреевна
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2701" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+							<tr id="ember2703" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/1117746951387">
+									ООО "ГЕОМАРКЕТИНГ"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--0 js-cell-status--0" data-title="Действующее" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7719796352
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQotC-0YDQsdC40L3QsCDQldC60LDRgtC10YDQuNC90LAg0JDQvdC00YDQtdC10LLQvdCwIn0">
+									Торбина Екатерина Андреевна
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2704" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+							<tr id="ember2706" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/1167746085737">
+									ООО "ДОРСТРОЙПРИБОР"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--0 js-cell-status--0" data-title="Действующее" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7719436455
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQl9GD0LHQutC-0LLQsCDQktC10YDQsCDQmNCy0LDQvdC-0LLQvdCwIn0">
+									Зубкова Вера Ивановна
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2707" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+							<tr id="ember2709" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/1087746515394">
+									ООО "ЛАНИТ"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--0 js-cell-status--0" data-title="Действующее" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7719677813
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQnNCw0L4g0JHQvtGA0LXQuSDQoNC-0YIifQ">
+									Мао Борей Рот
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2710" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+							<tr id="ember2712" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/1067799027977">
+									"АИИС"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--0 js-cell-status--0" data-title="Действующее" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7719286785
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQnNCw0YLRgNC-0YHQvtCy0LAg0JDQu9GM0LHQuNC90LAg0JLQu9Cw0LTQuNC80LjRgNC-0LLQvdCwIn0">
+									Матросова Альбина Владимировна
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2713" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+							<tr id="ember2715" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/1127799026255">
+									СОЮЗ ИЗЫСКАТЕЛЕЙ
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--0 js-cell-status--0" data-title="Действующее" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7719290260
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQndC40LrQvtC70LDQtdCy0LAg0JjRgNC40L3QsCDQkNC90LDRgtC-0LvRjNC10LLQvdCwIn0">
+									Николаева Ирина Анатольевна
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2716" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+							<tr id="ember2718" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/1047796091111">
+									ООО "ИД "СТРОИТЕЛЬСТВО И БИЗНЕС"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--1 js-cell-status--1" data-title="Деятельность прекращена" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7719508519
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQmNCy0LDQvdC-0LIg0JrQuNGA0LjQu9C7INCS0LjQutGC0L7RgNC-0LLQuNGHIn0">
+									Иванов Кирилл Викторович
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2719" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+							<tr id="ember2721" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/1037719038037">
+									ЗАО "ИНФОСТРОЙ"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--1 js-cell-status--1" data-title="Деятельность прекращена" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7719276970
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQnNC10YnQtdGA0Y_QutC-0LIg0J7Qu9C10LMg0JjQstCw0L3QvtCy0LjRhyJ9">
+									Мещеряков Олег Иванович
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2722" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+							<tr id="ember2724" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/1027719014465">
+									АНО УЦПК "ПНИИИС-ЗНАНИЯ"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--1 js-cell-status--1" data-title="Деятельность прекращена" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7719259573
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQm9Cw0YDQuNC90LAg0KLQsNGC0YzRj9C90LAg0JDQvdCw0YLQvtC70YzQtdCy0L3QsCJ9">
+									Ларина Татьяна Анатольевна
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2725" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+							<tr id="ember2727" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/1047796893781">
+									ООО "БЛИЦАРТ"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--1 js-cell-status--1" data-title="Деятельность прекращена" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7719534540
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQn9C-0LvRjtGF0L7QsiDQrtGA0LjQuSDQktC40LrRgtC-0YDQvtCy0LjRhyJ9">
+									Полюхов Юрий Викторович
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2728" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+							<tr id="ember2730" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/1027739275651">
+									"САНТЕХ НИИ ПРОЕКТ"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--1 js-cell-status--1" data-title="Деятельность прекращена" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7719021690
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQqNCw0YDQuNC_0L7QsiDQkNC70YzQsdC10YDRgiDQr9C60YPQsdC-0LLQuNGHIn0">
+									Шарипов Альберт Якубович
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2731" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+							<tr id="ember2733" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/1027700234869">
+									ФГУП "ПНИИИС"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--1 js-cell-status--1" data-title="Деятельность прекращена" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7719046173
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQkdC-0LPQtNCw0L3QvtCyINCc0LjRhdCw0LjQuyDQmNCz0L7RgNC10LLQuNGHIn0">
+									Богданов Михаил Игоревич
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2734" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+							<tr id="ember2736" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/5077746496174">
+									АО "САНТЕХНИИПРОЕКТ"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--2 js-cell-status--2" data-title="Находится в&amp;nbsp;процессе ликвидации или реорганизации" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7719628580
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQn9C-0LTQvtC_0YDQuNCz0L7RgNCwINCS0LjRgtCw0LvQuNC5INCS0LjRgtCw0LvRjNC10LLQuNGHIn0">
+									Подопригора Виталий Витальевич
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2737" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+							<tr id="ember2739" class="ember-view b-table-row"><td>
+	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div class="b-cell-index_text">
+								<a target="_blank" href="#side/info/1027739910439">
+									ФГУ "ЮЖНАЯ ДИРЕКЦИЯ"
+								</a>
+							</div>
+							<div class="b-cell-status b-cell-status--2 js-cell-status--2" data-title="Находится в&amp;nbsp;процессе ликвидации или реорганизации" original-title=""></div>
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--date">
+						<div class="b-cell">
+							7703001427
+						</div>
+					</td>
+					<td class="b-table-cell b-card-table-cell--chief">
+						<div class="b-cell">
+								<a target="_blank" href="#side/person/eyJpbm4iOiIiLCJwZXJzb24iOiLQmtGD0LfQvdC10YbQvtCyINCS0LvQsNC00LjQvNC40YAg0JDQu9C10LrRgdCw0L3QtNGA0L7QstC40YcifQ">
+									Кузнецов Владимир Александрович
+								</a>
+						</div>
+					</td>
+					<td class="b-table-cell b-sides-cell--control g-print-hidden">
+						<div class="b-cell">
+							<div class="b-cell-control b-cell-control--single">
+								<div class="b-cell-control-container">
+									<div class="b-cell-control-button js-cell-control-button js-cell-control-button--folders g-unselectable g-clickable">
+										<div id="ember2740" class="ember-view b-toggler b-toggler--folders"><div class="b-toggler-button js-toggler-button js-toggler-button--icon g-unselectable" data-title="Добавить компанию в&amp;nbsp;подборки" original-title=""></div>
+<!----><!----><!----></div>
+									</div>
+								</div>
+							</div>
+						</div>
+<!---->					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<!----></td>
+</tr>
+					</tbody>
+				</table>
+<!---->			</div>
+	</div>
+	<div class="b-card-title-end js-card-title-end"></div>
+
+<!---->
+<!---->
+<!---->
+<!----><!---->
+<!---->
+	<div class="b-card-title-wrapper js-card-title">
+		<div class="js-card-title-container">
+			<div class="b-card-title b-card-title--expandable js-card-title--unexpandable g-unclickable">
+				Компания имеет взыскиваемую судебными приставами задолженность по уплате налогов, превышающую 1000 рублей
+			</div>
+		</div>
+	</div>
+	<div class="b-card-title-end js-card-title-end"></div>
+<!---->
+	<div class="b-card-title-wrapper js-card-title">
+		<div class="js-card-title-container">
+			<div class="b-card-title b-card-title--expandable js-card-title--unexpandable g-unclickable">
+				Значительная сумма текущих исполнительных производств
+			</div>
+		</div>
+	</div>
+	<div class="b-card-title-end js-card-title-end"></div>
+
+	<div class="b-card-title-wrapper js-card-title">
+		<div class="js-card-title-container">
+			<div class="b-card-title b-card-title--expandable js-card-title--expandable" data-block="OldActiveExecutoryProcess">
+				Наличие активных исполнительных производств, зарегистрированных более двух месяцев назад • 26
+				<div class="b-card-title-button"></div>
+			</div>
+		</div>
+	</div>
+	<div class="b-card-title-content js-card-title-content">
+		<div class="b-table-header js-table-header">
+			<table class="b-table" cellpadding="0" cellspacing="0">
+				<thead>
+					<tr class="b-table-row">
+						<th class="b-table-cell b-executions-cell--case">
+							<div class="b-cell b-cell--head">
+								Производство
+							</div>
+						</th>
+						<th class="b-table-cell">
+							<div class="b-cell b-cell--head">
+								Исполнительный документ
+							</div>
+						</th>
+						<th class="b-table-cell b-executions-cell--subject">
+							<div class="b-cell b-cell--head">
+								Предмет исполнения
+							</div>
+						</th>
+						<th class="b-table-cell">
+							<div class="b-cell b-cell--head">
+								Отдел судебных приставов
+							</div>
+						</th>
+						<th class="b-table-cell b-executions-cell--sum">
+							<div class="b-cell b-cell--head">
+								Сумма долга
+							</div>
+						</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+		<table class="b-table b-card-table" cellpadding="0" cellspacing="0">
+			<tbody>
+					<tr id="ember2750" class="ember-view b-table-row"><td>
+<!---->	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell b-executions-cell--case">
+						<div class="b-cell">
+							<div>
+								2801/17/77022-ИП
+							</div>
+							<div class="g-date">
+									10.02.2017
+							</div>
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div>
+										№ФС 015522551
+									от <span class="g-date">02.02.2017</span>
+							</div>
+								<div class="g-inactive">
+									Исполнительный лист
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--subject">
+						<div class="b-cell">
+							Заработная плата
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<!---->
+								<div class="g-inactive">
+									105264, г. Москва, 7-я Парковая ул., д.26
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--sum">
+						<div class="b-cell">
+							<div>
+								89 446,4  руб.
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</td>
+</tr>
+					<tr id="ember2752" class="ember-view b-table-row"><td>
+<!---->	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell b-executions-cell--case">
+						<div class="b-cell">
+							<div>
+								2838/17/77022-ИП
+							</div>
+							<div class="g-date">
+									10.02.2017
+							</div>
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div>
+										№ФС 015522552
+									от <span class="g-date">02.02.2017</span>
+							</div>
+								<div class="g-inactive">
+									Исполнительный лист
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--subject">
+						<div class="b-cell">
+							Заработная плата
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<!---->
+								<div class="g-inactive">
+									105264, г. Москва, 7-я Парковая ул., д.26
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--sum">
+						<div class="b-cell">
+							<div>
+								144 599,9  руб.
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</td>
+</tr>
+					<tr id="ember2754" class="ember-view b-table-row"><td>
+<!---->	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell b-executions-cell--case">
+						<div class="b-cell">
+							<div>
+								2430/17/77022-ИП
+							</div>
+							<div class="g-date">
+									07.02.2017
+							</div>
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div>
+										№ФС 015801601
+									от <span class="g-date">10.01.2017</span>
+							</div>
+								<div class="g-inactive">
+									Исполнительный лист
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--subject">
+						<div class="b-cell">
+							Задолженность
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<!---->
+								<div class="g-inactive">
+									105264, г. Москва, 7-я Парковая ул., д.26
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--sum">
+						<div class="b-cell">
+							<div>
+								165 800  руб.
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</td>
+</tr>
+					<tr id="ember2756" class="ember-view b-table-row"><td>
+<!---->	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell b-executions-cell--case">
+						<div class="b-cell">
+							<div>
+								42583/17/23022-ИП
+							</div>
+							<div class="g-date">
+									30.01.2017
+							</div>
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div>
+										№27317
+									от <span class="g-date">11.01.2017</span>
+							</div>
+								<div class="g-inactive">
+									Акт органа, осуществляющего контрольные функции
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--subject">
+						<div class="b-cell">
+							Иной вид налога и сбора
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<!---->
+								<div class="g-inactive">
+									354340, г. Сочи-Адлер, ул. Кирпичная, 24-а
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--sum">
+						<div class="b-cell">
+							<div>
+								70 905,8  руб.
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</td>
+</tr>
+					<tr id="ember2758" class="ember-view b-table-row"><td>
+<!---->	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell b-executions-cell--case">
+						<div class="b-cell">
+							<div>
+								118845/16/23022-ИП
+							</div>
+							<div class="g-date">
+									07.12.2016
+							</div>
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div>
+										№26151
+									от <span class="g-date">21.11.2016</span>
+							</div>
+								<div class="g-inactive">
+									Акт органа, осуществляющего контрольные функции
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--subject">
+						<div class="b-cell">
+							Иной вид налога и сбора
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<!---->
+								<div class="g-inactive">
+									354340, г. Сочи-Адлер, ул. Кирпичная, 24-а
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--sum">
+						<div class="b-cell">
+							<div>
+								36 411  руб.
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</td>
+</tr>
+					<tr id="ember2760" class="ember-view b-table-row"><td>
+<!---->	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell b-executions-cell--case">
+						<div class="b-cell">
+							<div>
+								83015/16/23022-ИП
+							</div>
+							<div class="g-date">
+									18.11.2016
+							</div>
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div>
+										№24304
+									от <span class="g-date">14.10.2016</span>
+							</div>
+								<div class="g-inactive">
+									Акт органа, осуществляющего контрольные функции
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--subject">
+						<div class="b-cell">
+							Иной вид налога и сбора
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<!---->
+								<div class="g-inactive">
+									354340, г. Сочи-Адлер, ул. Кирпичная, 24-а
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--sum">
+						<div class="b-cell">
+							<div>
+								120 912,5  руб.
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</td>
+</tr>
+					<tr id="ember2762" class="ember-view b-table-row"><td>
+<!---->	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell b-executions-cell--case">
+						<div class="b-cell">
+							<div>
+								28097/16/77022-ИП
+							</div>
+							<div class="g-date">
+									29.09.2016
+							</div>
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div>
+										№ФС 007071826
+									от <span class="g-date">28.07.2016</span>
+							</div>
+								<div class="g-inactive">
+									Исполнительный лист
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--subject">
+						<div class="b-cell">
+							Задолженность
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<!---->
+								<div class="g-inactive">
+									105264, г. Москва, 7-я Парковая ул., д.26
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--sum">
+						<div class="b-cell">
+							<div>
+								170 197  руб.
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</td>
+</tr>
+					<tr id="ember2764" class="ember-view b-table-row"><td>
+<!---->	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell b-executions-cell--case">
+						<div class="b-cell">
+							<div>
+								27931/16/77022-ИП
+							</div>
+							<div class="g-date">
+									27.09.2016
+							</div>
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div>
+										№ФС 007067971
+									от <span class="g-date">01.08.2016</span>
+							</div>
+								<div class="g-inactive">
+									Исполнительный лист
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--subject">
+						<div class="b-cell">
+							Задолженность
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<!---->
+								<div class="g-inactive">
+									105264, г. Москва, 7-я Парковая ул., д.26
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--sum">
+						<div class="b-cell">
+							<div>
+								30 055,2  руб.
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</td>
+</tr>
+					<tr id="ember2766" class="ember-view b-table-row"><td>
+<!---->	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell b-executions-cell--case">
+						<div class="b-cell">
+							<div>
+								61422/16/23022-ИП
+							</div>
+							<div class="g-date">
+									07.09.2016
+							</div>
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div>
+										№22846
+									от <span class="g-date">09.08.2016</span>
+							</div>
+								<div class="g-inactive">
+									Акт органа, осуществляющего контрольные функции
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--subject">
+						<div class="b-cell">
+							Иной вид налога и сбора
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<!---->
+								<div class="g-inactive">
+									354340, г. Сочи-Адлер, ул. Кирпичная, 24-а
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--sum">
+						<div class="b-cell">
+							<div>
+								717 438,4  руб.
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</td>
+</tr>
+					<tr id="ember2768" class="ember-view b-table-row"><td>
+<!---->	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell b-executions-cell--case">
+						<div class="b-cell">
+							<div>
+								21443/16/77022-ИП
+							</div>
+							<div class="g-date">
+									11.08.2016
+							</div>
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div>
+										№ФС 001951782
+									от <span class="g-date">28.06.2016</span>
+							</div>
+								<div class="g-inactive">
+									Исполнительный лист
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--subject">
+						<div class="b-cell">
+							Госпошлина
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<!---->
+								<div class="g-inactive">
+									105264, г. Москва, 7-я Парковая ул., д.26
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--sum">
+						<div class="b-cell">
+							<div>
+								14 528,9  руб.
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</td>
+</tr>
+					<tr id="ember2770" class="ember-view b-table-row"><td>
+<!---->	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell b-executions-cell--case">
+						<div class="b-cell">
+							<div>
+								53721/16/23022-ИП
+							</div>
+							<div class="g-date">
+									20.07.2016
+							</div>
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div>
+										№21275
+									от <span class="g-date">06.07.2016</span>
+							</div>
+								<div class="g-inactive">
+									Акт органа, осуществляющего контрольные функции
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--subject">
+						<div class="b-cell">
+							Иной вид налога и сбора
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<!---->
+								<div class="g-inactive">
+									354340, г. Сочи-Адлер, ул. Кирпичная, 24-а
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--sum">
+						<div class="b-cell">
+							<div>
+								65 316,6  руб.
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</td>
+</tr>
+					<tr id="ember2772" class="ember-view b-table-row"><td>
+<!---->	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell b-executions-cell--case">
+						<div class="b-cell">
+							<div>
+								14983/16/77022-ИП
+							</div>
+							<div class="g-date">
+									17.06.2016
+							</div>
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div>
+										№ФС 004912891
+									от <span class="g-date">20.04.2016</span>
+							</div>
+								<div class="g-inactive">
+									Исполнительный лист
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--subject">
+						<div class="b-cell">
+							Задолженность
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<!---->
+								<div class="g-inactive">
+									105264, г. Москва, 7-я Парковая ул., д.26
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--sum">
+						<div class="b-cell">
+							<div>
+								26 633,7  руб.
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</td>
+</tr>
+					<tr id="ember2774" class="ember-view b-table-row"><td>
+<!---->	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell b-executions-cell--case">
+						<div class="b-cell">
+							<div>
+								33614/16/23022-ИП
+							</div>
+							<div class="g-date">
+									11.05.2016
+							</div>
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div>
+										№20181
+									от <span class="g-date">09.05.2016</span>
+							</div>
+								<div class="g-inactive">
+									Акт органа, осуществляющего контрольные функции
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--subject">
+						<div class="b-cell">
+							Иной вид налога и сбора
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<!---->
+								<div class="g-inactive">
+									354340, г. Сочи-Адлер, ул. Кирпичная, 24-а
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--sum">
+						<div class="b-cell">
+							<div>
+								3,4 млн. руб.
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</td>
+</tr>
+					<tr id="ember2776" class="ember-view b-table-row"><td>
+<!---->	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell b-executions-cell--case">
+						<div class="b-cell">
+							<div>
+								10858/16/77022-ИП
+							</div>
+							<div class="g-date">
+									28.04.2016
+							</div>
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div>
+										№ФС 007207870
+									от <span class="g-date">26.02.2021</span>
+							</div>
+								<div class="g-inactive">
+									Исполнительный лист
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--subject">
+						<div class="b-cell">
+							Задолженность
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<!---->
+								<div class="g-inactive">
+									105264, г. Москва, 7-я Парковая ул., д.26
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--sum">
+						<div class="b-cell">
+							<div>
+								36 849,7  руб.
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</td>
+</tr>
+					<tr id="ember2778" class="ember-view b-table-row"><td>
+<!---->	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell b-executions-cell--case">
+						<div class="b-cell">
+							<div>
+								9285/16/77022-ИП
+							</div>
+							<div class="g-date">
+									13.04.2016
+							</div>
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div>
+										№ФС 004912261
+									от <span class="g-date">15.10.2015</span>
+							</div>
+								<div class="g-inactive">
+									Исполнительный лист
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--subject">
+						<div class="b-cell">
+							Задолженность
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<!---->
+								<div class="g-inactive">
+									105264, г. Москва, 7-я Парковая ул., д.26
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--sum">
+						<div class="b-cell">
+							<div>
+								27 164,8  руб.
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</td>
+</tr>
+					<tr id="ember2780" class="ember-view b-table-row"><td>
+<!---->	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell b-executions-cell--case">
+						<div class="b-cell">
+							<div>
+								8526/16/77022-ИП
+							</div>
+							<div class="g-date">
+									05.04.2016
+							</div>
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div>
+										№ФС 004910556
+									от <span class="g-date">10.03.2016</span>
+							</div>
+								<div class="g-inactive">
+									Исполнительный лист
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--subject">
+						<div class="b-cell">
+							Задолженность
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<!---->
+								<div class="g-inactive">
+									105264, г. Москва, 7-я Парковая ул., д.26
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--sum">
+						<div class="b-cell">
+							<div>
+								39 035,2  руб.
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</td>
+</tr>
+					<tr id="ember2782" class="ember-view b-table-row"><td>
+<!---->	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell b-executions-cell--case">
+						<div class="b-cell">
+							<div>
+								8479/16/77022-ИП
+							</div>
+							<div class="g-date">
+									05.04.2016
+							</div>
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div>
+										№ФС 007205441
+									от <span class="g-date">26.02.2016</span>
+							</div>
+								<div class="g-inactive">
+									Исполнительный лист
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--subject">
+						<div class="b-cell">
+							Задолженность
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<!---->
+								<div class="g-inactive">
+									105264, г. Москва, 7-я Парковая ул., д.26
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--sum">
+						<div class="b-cell">
+							<div>
+								316 802,3  руб.
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</td>
+</tr>
+					<tr id="ember2784" class="ember-view b-table-row"><td>
+<!---->	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell b-executions-cell--case">
+						<div class="b-cell">
+							<div>
+								7990/16/77022-ИП
+							</div>
+							<div class="g-date">
+									29.03.2016
+							</div>
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div>
+										№ФС 007174760
+									от <span class="g-date">26.12.2015</span>
+							</div>
+								<div class="g-inactive">
+									Исполнительный лист
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--subject">
+						<div class="b-cell">
+							Задолженность
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<!---->
+								<div class="g-inactive">
+									105264, г. Москва, 7-я Парковая ул., д.26
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--sum">
+						<div class="b-cell">
+							<div>
+								33 960,9  руб.
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</td>
+</tr>
+					<tr id="ember2786" class="ember-view b-table-row"><td>
+<!---->	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell b-executions-cell--case">
+						<div class="b-cell">
+							<div>
+								7991/16/77022-ИП
+							</div>
+							<div class="g-date">
+									29.03.2016
+							</div>
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div>
+										№ФС 007201342
+									от <span class="g-date">24.02.2016</span>
+							</div>
+								<div class="g-inactive">
+									Исполнительный лист
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--subject">
+						<div class="b-cell">
+							Задолженность
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<!---->
+								<div class="g-inactive">
+									105264, г. Москва, 7-я Парковая ул., д.26
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--sum">
+						<div class="b-cell">
+							<div>
+								35 772,2  руб.
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</td>
+</tr>
+					<tr id="ember2788" class="ember-view b-table-row"><td>
+<!---->	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell b-executions-cell--case">
+						<div class="b-cell">
+							<div>
+								7198/16/77022-ИП
+							</div>
+							<div class="g-date">
+									25.03.2016
+							</div>
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div>
+										№ФС 001947761
+									от <span class="g-date">11.02.2016</span>
+							</div>
+								<div class="g-inactive">
+									Исполнительный лист
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--subject">
+						<div class="b-cell">
+							Госпошлина
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<!---->
+								<div class="g-inactive">
+									105264, г. Москва, 7-я Парковая ул., д.26
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--sum">
+						<div class="b-cell">
+							<div>
+								7 085,7  руб.
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</td>
+</tr>
+					<tr id="ember2790" class="ember-view b-table-row"><td>
+<!---->	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell b-executions-cell--case">
+						<div class="b-cell">
+							<div>
+								7199/16/77022-ИП
+							</div>
+							<div class="g-date">
+									25.03.2016
+							</div>
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div>
+										№ФС 001947764
+									от <span class="g-date">10.02.2016</span>
+							</div>
+								<div class="g-inactive">
+									Исполнительный лист
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--subject">
+						<div class="b-cell">
+							Госпошлина
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<!---->
+								<div class="g-inactive">
+									105264, г. Москва, 7-я Парковая ул., д.26
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--sum">
+						<div class="b-cell">
+							<div>
+								400  руб.
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</td>
+</tr>
+					<tr id="ember2792" class="ember-view b-table-row"><td>
+<!---->	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell b-executions-cell--case">
+						<div class="b-cell">
+							<div>
+								6282/16/77022-ИП
+							</div>
+							<div class="g-date">
+									16.03.2016
+							</div>
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div>
+										№ФС 010125287
+									от <span class="g-date">20.11.2015</span>
+							</div>
+								<div class="g-inactive">
+									Исполнительный лист
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--subject">
+						<div class="b-cell">
+							Заработная плата
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<!---->
+								<div class="g-inactive">
+									105264, г. Москва, 7-я Парковая ул., д.26
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--sum">
+						<div class="b-cell">
+							<div>
+								0 руб.
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</td>
+</tr>
+					<tr id="ember2794" class="ember-view b-table-row"><td>
+<!---->	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell b-executions-cell--case">
+						<div class="b-cell">
+							<div>
+								5212/16/77022-ИП
+							</div>
+							<div class="g-date">
+									10.03.2016
+							</div>
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div>
+										№ФС 007203325
+									от <span class="g-date">11.02.2016</span>
+							</div>
+								<div class="g-inactive">
+									Исполнительный лист
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--subject">
+						<div class="b-cell">
+							Задолженность
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<!---->
+								<div class="g-inactive">
+									105264, г. Москва, 7-я Парковая ул., д.26
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--sum">
+						<div class="b-cell">
+							<div>
+								71 173  руб.
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</td>
+</tr>
+					<tr id="ember2796" class="ember-view b-table-row"><td>
+<!---->	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell b-executions-cell--case">
+						<div class="b-cell">
+							<div>
+								4398/16/77022-ИП
+							</div>
+							<div class="g-date">
+									26.02.2016
+							</div>
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div>
+										№ФС 004923062
+									от <span class="g-date">02.06.2015</span>
+							</div>
+								<div class="g-inactive">
+									Исполнительный лист
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--subject">
+						<div class="b-cell">
+							Задолженность
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<!---->
+								<div class="g-inactive">
+									105264, г. Москва, 7-я Парковая ул., д.26
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--sum">
+						<div class="b-cell">
+							<div>
+								27 471,9  руб.
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</td>
+</tr>
+					<tr id="ember2798" class="ember-view b-table-row"><td>
+<!---->	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell b-executions-cell--case">
+						<div class="b-cell">
+							<div>
+								3985/16/77022-ИП
+							</div>
+							<div class="g-date">
+									24.02.2016
+							</div>
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div>
+										№ФС 007184578
+									от <span class="g-date">13.01.2016</span>
+							</div>
+								<div class="g-inactive">
+									Исполнительный лист
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--subject">
+						<div class="b-cell">
+							Задолженность
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<!---->
+								<div class="g-inactive">
+									105264, г. Москва, 7-я Парковая ул., д.26
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--sum">
+						<div class="b-cell">
+							<div>
+								26 075,5  руб.
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</td>
+</tr>
+					<tr id="ember2800" class="ember-view b-table-row"><td>
+<!---->	<div class="g-print-table-wrapper">
+		<table class="b-table" cellpadding="0" cellspacing="0">
+			<tbody>
+				<tr>
+					<td class="b-table-cell b-executions-cell--case">
+						<div class="b-cell">
+							<div>
+								67172/15/77011-ИП
+							</div>
+							<div class="g-date">
+									04.12.2015
+							</div>
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<div>
+										№ФС004908275
+									от <span class="g-date">06.10.2015</span>
+							</div>
+								<div class="g-inactive">
+									Исполнительный лист
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--subject">
+						<div class="b-cell">
+							Задолженность
+						</div>
+					</td>
+					<td class="b-table-cell">
+						<div class="b-cell">
+							<!---->
+								<div class="g-inactive">
+									125047, г. Москва, ул. Бутырский вал, д.5
+								</div>
+						</div>
+					</td>
+					<td class="b-table-cell b-executions-cell--sum">
+						<div class="b-cell">
+							<div>
+								29 696,7  руб.
+							</div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</td>
+</tr>
+			</tbody>
+		</table>
+<!---->	</div>
+	<div class="b-card-title-end js-card-title-end"></div>
+
+<!---->
+<!---->
+<!----><!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+	<div class="b-card-title-wrapper js-card-title">
+		<div class="js-card-title-container">
+			<div class="b-card-title b-card-title--expandable js-card-title--unexpandable g-unclickable">
+				Сумма предъявленных компании исков значительно превышает сумму предъявляемых ею исков
+			</div>
+		</div>
+	</div>
+	<div class="b-card-title-end js-card-title-end"></div>
+<!---->
+<!---->
+
+	</div>
+	<div class="b-card-content b-card-content--accounts js-card-content js-card-content--accounts g-hidden  ">
+		<div class="b-card-title-wrapper js-card-title">
+	<div class="js-card-title-container">
+		<div data-key="Accounts" class="b-card-title b-card-title--expandable js-card-title--expandable b-card-title--expanded">
+			Сведения о приостановлении операций по счетам налогоплательщика
+<!---->					<div class="b-card-years">
+						<div class="b-card-year b-card-year--active g-unselectable g-clickable js-card--blocked_accounts_update">
+							Обновить
+						</div>
+					</div>
+			<div class="b-card-title-button"></div>
+		</div>
+			<div class="b-table-header js-table-header g-invisible">
+	<table class="b-table" cellpadding="0" cellspacing="0">
+		<thead>
+			<tr class="b-table-row">
+				<th class="b-table-cell b-card-table-cell--title">
+					<div class="b-cell b-cell--head">
+						Номер решения
+					</div>
+				</th>
+				<th class="b-table-cell b-card-table-cell--date">
+					<div class="b-cell b-cell--head">
+						Дата решения
+					</div>
+				</th>
+				<th class="b-table-cell">
+					<div class="b-cell b-cell--head">
+						Название налогового органа
+					</div>
+				</th>
+				<th class="b-table-cell b-card-table-cell--bank">
+					<div class="b-cell b-cell--head">
+						Банк, в который направлено решение
+					</div>
+				</th>
+				<th class="b-table-cell b-card-table-cell--bik">
+					<div class="b-cell b-cell--head">
+						БИК банка
+					</div>
+				</th>
+			</tr>
+		</thead>
+	</table>
+</div>
+
+	</div>
+</div>
+<div data-content="Accounts" class="b-card-title-content js-card-title-content b-card-title-content--expanded">
+<!---->	<div class="b-table-preloader b-table-preloader--head g-hidden">
+		<div class="g-preloader"></div>
+	</div>
+			<div class="b-table-preloader b-table-preloader--head">
+				<div class="g-nocontent"></div>
+			</div>
+</div>
+<div class="b-card-title-end js-card-title-end"></div>
+
+	</div>
+<!---->		<div class="b-card-content b-card-content--connections js-card-content js-card-content--connections g-hidden g-nocontent">
+			<div class="b-card-connections js-card-connections">
+<!----></div>
+
+			<div class="b-card-connections-preloader_wrapper g-hidden">
+				<div class="b-card-connections-preloader g-unselectable">
+					<div class="b-card-connections-preloader-spin js-form-spin"></div>
+					Загрузка данных
+				</div>
+			</div>
+		</div>
+	<div class="b-card-content b-card-content--accounting js-card-content js-card-content--accounting g-hidden g-nocontent">
+		<!---->
+	</div>
+	<div class="b-card-content js-card-content js-card-content--licenses g-hidden g-nocontent">
+		<div class="b-card-audit">
+<!----></div>
+
+	</div>
+	<div class="b-card-content b-card-content--contracts js-card-content js-card-content--contracts g-hidden g-nocontent">
+		<!---->
+		<div class="b-card-title-wrapper js-card-title">
+	<div class="js-card-title-container">
+		<div data-key="StateContracts" class="b-card-title b-card-title--expanded">
+			Государственные контракты
+			<div class="b-card-years">
+<!---->			</div>
+			<div class="b-card-title-button"></div>
+		</div>
+	</div>
+</div>
+<div data-content="StateContracts" class=" b-card-title-content--expanded">
+	<div class="b-card-audit">
+<!---->	</div>
+</div>
+
+	</div>
+	<div class="b-card-content b-card-content--audit js-card-content g-hidden g-nocontent">
+		<div class="b-card-audit">
+	<div class="b-card-title-wrapper js-card-title">
+		<div class="js-card-title-container">
+			<div class="b-card-title">
+				Плановые проверки
+				<div class="b-card-years">
+<!---->				</div>
+			</div>
+		</div>
+	</div>
+<!----></div>
+
+	</div>
+	<div class="b-card-content b-card-content--pledges js-card-content g-hidden">
+		<div id="ember2493" class="ember-view b-pledges"><div class="b-card-title-wrapper js-card-title">
+	<div class="js-card-title-container">
+		<div data-key="MortgagorPledges" class="b-card-title b-card-title--expandable js-card-title--expandable b-card-title--expanded">
+			В роли залогодержателя<!---->
+			<div class="b-card-title-button"></div>
+		</div>
+			<div class="b-table-header js-table-header g-hidden">
+	<table class="b-table" cellpadding="0" cellspacing="0">
+		<thead>
+			<tr class="b-table-row">
+				<th class="b-table-cell b-card-table-cell--title">
+					<div class="b-cell b-cell--head">
+						Уведомление
+					</div>
+				</th>
+				<th class="b-table-cell b-card-table-cell--date">
+					<div class="b-cell b-cell--head">
+						Дата
+					</div>
+				</th>
+				<th class="b-table-cell">
+					<div class="b-cell b-cell--head">
+						Наименование договора
+					</div>
+				</th>
+				<th class="b-table-cell b-card-table-cell--pledge">
+					<div class="b-cell b-cell--head">
+						Залогодатель
+					</div>
+				</th>
+			</tr>
+		</thead>
+	</table>
+</div>
+
+	</div>
+</div>
+<div data-content="MortgagorPledges" class="b-card-title-content js-card-title-content b-card-title-content--expanded">
+<!---->				<div class="b-table-preloader">
+					<div class="g-nocontent"></div>
+				</div>
+</div>
+<div class="b-card-title-end js-card-title-end"></div>
+
+<div class="b-card-title-wrapper js-card-title">
+	<div class="js-card-title-container">
+		<div data-key="PawneePledges" class="b-card-title b-card-title--expandable js-card-title--expandable">
+			В роли залогодателя<!---->
+			<div class="b-card-title-button"></div>
+		</div>
+<!---->	</div>
+</div>
+<div data-content="PawneePledges" class="b-card-title-content js-card-title-content">
+		<div class="b-table-header js-table-header g-hidden">
+	<table class="b-table" cellpadding="0" cellspacing="0">
+		<thead>
+			<tr class="b-table-row">
+				<th class="b-table-cell b-card-table-cell--title">
+					<div class="b-cell b-cell--head">
+						Уведомление
+					</div>
+				</th>
+				<th class="b-table-cell b-card-table-cell--date">
+					<div class="b-cell b-cell--head">
+						Дата
+					</div>
+				</th>
+				<th class="b-table-cell">
+					<div class="b-cell b-cell--head">
+						Наименование договора
+					</div>
+				</th>
+				<th class="b-table-cell b-card-table-cell--pledge">
+					<div class="b-cell b-cell--head">
+						Залогодержатель
+					</div>
+				</th>
+			</tr>
+		</thead>
+	</table>
+</div>
+
+				<div class="b-table-preloader">
+					<div class="g-nocontent"></div>
+				</div>
+</div>
+<div class="b-card-title-end js-card-title-end"></div>
+</div>
+	</div>
+	<div class="b-card-content b-card-content--executions js-card-content g-hidden g-nocontent">
+		<div id="ember2500" class="ember-view b-executions"><!----></div>
+	</div>
+	<div class="b-card-content b-card-content--intellectual js-card-content g-hidden g-nocontent">
+		<div id="ember2507" class="ember-view b-intellectual"><!----></div>
+	</div>
+	<div class="b-card-content b-card-content--excerpt js-card-content g-hidden b-card-content--no_excerpt g-nocontent">
+		<!---->
+	</div>
+	<div class="b-card-content js-card-content g-hidden g-nocontent">
+		<!----><!----><!----><!---->
+	</div>
+<!---->	<div class="b-card-content js-card-content g-hidden g-nocontent">
+		<!---->
+	</div>
+	<div class="b-card-content b-card-content--multicolumns js-card-content g-hidden g-nocontent">
+		<div id="ember2516" class="ember-view b-sessions b-cases"><!----></div>
+	</div>
+	<div class="b-card-content b-card-content--stats js-card-content g-hidden">
+			<div class="b-card-title-wrapper js-card-title">
+	<div class="js-card-title-container">
+		<div data-key="CompanyStatsSideTypes" class="b-card-title b-card-title--expandable js-card-title--expandable b-card-title--expanded">
+			Количество дел по типу участия
+			<div class="b-card-title-button"></div>
+		</div>
+			<div class="b-table-header js-table-header">
+	<table class="b-table" cellpadding="0" cellspacing="0">
+		<thead>
+			<tr class="b-table-row">
+				<th class="b-table-cell">
+					<div class="b-cell b-cell--head">
+						Тип участия
+					</div>
+				</th>
+				<th class="b-table-cell b-card-table-cell--side_type b-table-cell--accounting">
+					<div class="b-cell b-cell--head">
+						Количество дел
+					</div>
+				</th>
+				<th class="b-table-cell b-card-table-cell--side_type b-table-cell--accounting">
+					<div class="b-cell b-cell--head">
+						Исковые требования
+					</div>
+				</th>
+					<th class="b-table-cell b-card-table-cell--status b-table-cell--accounting">
+						<div class="b-cell b-cell--head">
+							Исковая нагрузка
+						</div>
+					</th>
+			</tr>
+		</thead>
+	</table>
+</div>
+
+	</div>
+</div>
+<div data-content="CompanyStatsSideTypes" class="b-card-title-content js-card-title-content b-card-title-content--expanded">
+<!---->	<div class="b-table-preloader b-table-preloader--head g-hidden">
+		<div class="g-preloader"></div>
+	</div>
+	<table cellpadding="0" cellspacing="0" class="b-table b-card-table">
+		<tbody>
+			<tr class="b-table-row">
+				<td class="b-table-cell">
+					<div class="b-cell">
+						<span class="g-number g-clickable js-stats_transition" data-sidetype="0">В качестве истца</span>
+					</div>
+				</td>
+				<td class="b-table-cell b-card-table-cell--side_type b-table-cell--accounting">
+					<div class="b-cell">
+							—
+					</div>
+				</td>
+				<td class="b-table-cell b-card-table-cell--side_type b-table-cell--accounting">
+					<div class="b-cell">
+							—
+					</div>
+				</td>
+					<td class="b-table-cell b-card-table-cell--status b-table-cell--accounting">
+						<div class="b-cell">
+								—
+						</div>
+					</td>
+			</tr>
+			<tr class="b-table-row">
+				<td class="b-table-cell">
+					<div class="b-cell">
+						<span class="g-number g-clickable js-stats_transition" data-sidetype="1">В качестве ответчика</span>
+					</div>
+				</td>
+				<td class="b-table-cell b-card-table-cell--side_type b-table-cell--accounting">
+					<div class="b-cell">
+							—
+					</div>
+				</td>
+				<td class="b-table-cell b-card-table-cell--side_type b-table-cell--accounting">
+					<div class="b-cell">
+							—
+					</div>
+				</td>
+					<td class="b-table-cell b-card-table-cell--status b-table-cell--accounting">
+						<div class="b-cell">
+								—
+						</div>
+					</td>
+			</tr>
+			<tr class="b-table-row">
+				<td class="b-table-cell">
+					<div class="b-cell">
+						<span class="g-number g-clickable js-stats_transition" data-sidetype="2">В качестве третьего лица</span>
+					</div>
+				</td>
+				<td class="b-table-cell b-card-table-cell--side_type b-table-cell--accounting">
+					<div class="b-cell">
+							—
+					</div>
+				</td>
+				<td class="b-table-cell b-card-table-cell--side_type b-table-cell--accounting">
+					<div class="b-cell">
+							—
+					</div>
+				</td>
+					<td class="b-table-cell b-card-table-cell--status b-table-cell--accounting">
+						<div class="b-cell">
+								—
+						</div>
+					</td>
+			</tr>
+			<tr class="b-table-row">
+				<td class="b-table-cell">
+					<div class="b-cell">
+						<span class="g-number g-clickable js-stats_transition" data-sidetype="3">В качестве иного лица</span>
+					</div>
+				</td>
+				<td class="b-table-cell b-card-table-cell--side_type b-table-cell--accounting">
+					<div class="b-cell">
+							—
+					</div>
+				</td>
+				<td class="b-table-cell b-card-table-cell--side_type b-table-cell--accounting">
+					<div class="b-cell">
+							—
+					</div>
+				</td>
+					<td class="b-table-cell b-card-table-cell--status b-table-cell--accounting">
+						<div class="b-cell">
+								—
+						</div>
+					</td>
+			</tr>
+			<tr class="b-table-row b-table-row--sum">
+				<td class="b-table-cell">
+					<div class="b-cell">
+						<strong>Всего</strong>
+					</div>
+				</td>
+				<td class="b-table-cell b-card-table-cell--side_type b-table-cell--accounting">
+					<div class="b-cell">
+							<strong>—</strong>
+					</div>
+				</td>
+				<td class="b-table-cell b-card-table-cell--side_type b-table-cell--accounting">
+					<div class="b-cell">
+						<strong>—</strong>
+					</div>
+				</td>
+					<td class="b-table-cell b-card-table-cell--status b-table-cell--accounting">
+						<div class="b-cell">
+							<strong>—</strong>
+						</div>
+					</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="b-card-title-end js-card-title-end"></div>
+
+	<div class="b-card-title-wrapper js-card-title">
+	<div class="js-card-title-container">
+		<div data-key="CompanyStatsOpponents" class="b-card-title b-card-title--expandable js-card-title--expandable">
+			Количество дел и исковые требования по типу оппонентов
+			<div class="b-card-title-button"></div>
+		</div>
+<!---->	</div>
+</div>
+<div data-content="CompanyStatsOpponents" class="b-card-title-content js-card-title-content">
+		<div class="b-table-header js-table-header">
+	<table class="b-table" cellpadding="0" cellspacing="0">
+		<thead>
+			<tr class="b-table-row">
+				<th class="b-table-cell">
+					<div class="b-cell b-cell--head">
+						Тип оппонента
+					</div>
+				</th>
+				<th class="b-table-cell b-card-table-cell--result b-table-cell--accounting">
+					<div class="b-cell b-cell--head">
+						Истец
+					</div>
+				</th>
+				<th class="b-table-cell b-card-table-cell--result b-table-cell--accounting">
+					<div class="b-cell b-cell--head">
+						Ответчик
+					</div>
+				</th>
+				<th class="b-table-cell b-card-table-cell--result_last b-table-cell--accounting">
+					<div class="b-cell b-cell--head">
+						Третье лицо
+					</div>
+				</th>
+			</tr>
+		</thead>
+	</table>
+</div>
+
+	<div class="b-table-preloader b-table-preloader--head g-hidden">
+		<div class="g-preloader"></div>
+	</div>
+	<table cellpadding="0" cellspacing="0" class="b-table b-card-table">
+		<tbody>
+<!---->		</tbody>
+	</table>
+</div>
+<div class="b-card-title-end js-card-title-end"></div>
+
+	<div class="g-print-container">
+	<div class="b-card-title-wrapper js-card-title">
+		<div class="js-card-title-container">
+			<div data-key="CompanyStatsMoneyChart" class="b-card-title b-card-title--expandable js-card-title--expandable">
+				Динамика исковых требований
+				<div class="b-card-title-button"></div>
+			</div>
+		</div>
+	</div>
+	<div data-content="CompanyStatsMoneyChart" class="b-card-title-content js-card-title-content">
+		<div class="b-table-preloader g-hidden">
+			<div class="g-preloader"></div>
+		</div>
+		<div class="">
+<!---->		</div>
+	</div>
+	<div class="b-card-title-end js-card-title-end"></div>
+</div>
+
+		<div class="g-print-container">
+	<div class="b-card-title-wrapper js-card-title">
+		<div class="js-card-title-container">
+			<div data-key="CompanyStatsWeightChart" class="b-card-title b-card-title--expandable js-card-title--expandable">
+				Динамика исковой нагрузки
+				<div class="b-card-title-button"></div>
+			</div>
+		</div>
+	</div>
+	<div data-content="CompanyStatsWeightChart" class="b-card-title-content js-card-title-content">
+		<div class="b-table-preloader g-hidden">
+			<div class="g-preloader"></div>
+		</div>
+		<div class="">
+<!---->		</div>
+	</div>
+	<div class="b-card-title-end js-card-title-end"></div>
+</div>
+
+	<div class="g-print-container">
+	<div class="b-card-title-wrapper js-card-title">
+		<div class="js-card-title-container">
+			<div data-key="CompanyStatsCasesChart" class="b-card-title b-card-title--expandable js-card-title--expandable">
+				Динамика количества дел
+				<div class="b-card-title-button"></div>
+			</div>
+		</div>
+	</div>
+	<div data-content="CompanyStatsCasesChart" class="b-card-title-content js-card-title-content">
+		<div class="b-table-preloader g-hidden">
+			<div class="g-preloader"></div>
+		</div>
+		<div class="">
+<!---->		</div>
+	</div>
+	<div class="b-card-title-end js-card-title-end"></div>
+</div>
+
+<!---->
+	</div>
+	<div class="b-card-content js-card-content g-hidden g-nocontent">
+		<div id="ember2521" class="ember-view b-sessions"><!----></div>
+	</div>
+	<div class="b-card-content js-card-content g-hidden">
+		<div id="ember2530" class="ember-view b-calendar-sheet"><!----></div>
+	</div>
+	<div class="b-card-content js-card-content g-hidden g-nocontent">
+		<div id="ember2537" class="ember-view b-sessions b-cases"><!----></div>
+	</div>
+	<div class="b-card-content js-card-content g-hidden">
+		<div class="b-card-analysis g-hidden">
+	<div class="b-card-title-wrapper js-card-title">
+		<div class="js-card-title-container">
+			<div data-key="CompanyAnalysisCaseTypesAndCategories" class="b-card-title b-card-title--expandable js-card-title--expandable b-card-title--expanded">
+				Виды и категории дел
+				<div class="b-card-title-button"></div>
+<!---->			</div>
+		</div>
+	</div>
+	<div data-content="CompanyAnalysisCaseTypesAndCategories" class="b-card-title-content js-card-title-content b-card-title-content--expanded">
+		<div class="b-table-preloader g-hidden">
+			<div class="g-preloader"></div>
+		</div>
+			<div class="b-card-accounting b-card-accounting--analysis">
+				<table class="b-table" cellpadding="0" cellspacing="0">
+					<tbody>
+<!---->					</tbody>
+				</table>
+			</div>
+	</div>
+	<div class="b-card-title-end js-card-title-end"></div>
+</div>
+
+<div class="b-card-analysis g-hidden">
+	<div class="b-card-title-wrapper js-card-title">
+		<div class="js-card-title-container">
+			<div data-key="CompanyAnalysisCaseParticipants" class="b-card-title b-card-title--expandable js-card-title--expandable">
+				Участники дел
+				<div class="b-card-title-button"></div>
+<!---->			</div>
+		</div>
+	</div>
+	<div data-content="CompanyAnalysisCaseParticipants" class="b-card-title-content js-card-title-content">
+		<div class="b-table-preloader g-hidden">
+			<div class="g-preloader"></div>
+		</div>
+			<div class="b-card-accounting b-card-accounting--analysis">
+				<table class="b-table" cellpadding="0" cellspacing="0">
+					<tbody>
+<!---->					</tbody>
+				</table>
+			</div>
+	</div>
+	<div class="b-card-title-end js-card-title-end"></div>
+</div>
+
+
+	</div>
+<!----><div class="b-toolbar" style="transform: translateX(0px);">
+	<a class="b-toolbar_button b-toolbar_button--help" href="http://help.casebook.ru" target="_blank"></a>
+</div>
+</div>
+		<div class="l-card-preloader g-hidden">
+			<table id="ember1739" class="ember-view b-preloader"><tr>
+	<td class="b-preloader-block">
+		<div class="b-preloader-logo"></div>
+		<div class="b-preloader-title">
+			Загружается информация
+		</div>
+		<div class="b-preloader-line"></div>
+				<div class="b-preloader-feature">
+						<div class="b-news-page-img">
+							<img src="https://i.gyazo.com/1c3fd9396e7efc0c06937fa8738fe52a.png">
+						</div>
+					<div class="b-news-page-info">
+						<h2 class="b-news-page-info-title">
+							Параметры отслеживания новых дел
+						</h2>
+						<p class="b-news-page-info-text">
+							Ограничьте условия отслеживания новых дел компании или судьи с помощью фильтров в подборках, чтобы не засорять ленту лишними событиями.
+						</p>
+					</div>
+					<div class="b-preloader-feature-clear"></div>
+				</div>
+	</td>
+</tr>
+</table>
+		</div>
+		<div class="l-card-offset"></div>
+	</div>
