@@ -558,7 +558,7 @@ form p{
 .n-item a:hover{
 	color:white;
 	background:#c7ccd1;
-	border-left:7px solid LimeGreen;
+	border-left:7px solid blue; /*was limegreen */
 }
 .n-item li {
 	float:left;
