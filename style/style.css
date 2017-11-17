@@ -1021,12 +1021,12 @@ opera:-o-prefocus .insidePage{
 
 a:link,
 a:visited {
-	color: #333
+	color: #a9a9a9
 }
 
 a:hover,
 a:active {
-	color: #9e2020
+	color: #a9a9a9
 }
 
 .navbar {
