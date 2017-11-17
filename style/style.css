@@ -1026,7 +1026,7 @@ a:visited {
 
 a:hover,
 a:active {
-	color: #a9a9a9
+	color: #a9a9a9;
 	text-decoration: underline
 }
 
