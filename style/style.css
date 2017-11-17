@@ -1024,12 +1024,11 @@ a:visited {
 	color: #a9a9a9
 }
 
-a:hover,
-a:active {
+a:hover {
 	color: #a9a9a9;
 	text-decoration: underline
 }
-
+/*a:active deleted*/
 .navbar {
 	overflow: hidden
 }
