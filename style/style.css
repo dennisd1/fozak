@@ -1464,8 +1464,8 @@ a.readMore{
 .mainimg {
 	width: 700px;
 }
-.whitetext {
+.greyfootertext {
 	font-size: 15px;
-	color: white;
+	color: #a9a9a9;
 	text-align: left;
 }
