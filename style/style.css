@@ -1465,6 +1465,12 @@ a.readMore{
 	width: 700px;
 }
 .greyfootertext {
+	font-size: 10px;
+	color: #a9a9a9;
+	text-align: left;
+}
+
+.greyfooterlink {
 	font-size: 15px;
 	color: #a9a9a9;
 	text-align: left;
