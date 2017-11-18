@@ -1,2 +1,2 @@
 User-agent: *
-sitemap: http://arbira.ru/sitemap.xml
+sitemap: http://fozak.ru/sitemap.xml
