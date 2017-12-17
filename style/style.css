@@ -56,10 +56,10 @@ a{ outline:none;color:#0B1E43;} /*was text-decoration:underline;*/
 }
 .greennumber{
 	font-size: 25px;
-	color: green;
+	color: blue; /*#was green*/
 	}
 h1{
-	border-left: 7px solid LimeGreen; /*#f4811f*/
+	border-left: 7px solid blue; /*#f4811f was limegreen*/
 	padding-left: 28px;
 	margin:20px 20px 20px 0;
 	font-family: "ubuntuB";
@@ -68,7 +68,7 @@ h1{
 	display:inline-block;
 }
 .header1{                              /*added */
-	border-left: 7px LimeGreen;
+	border-left: 7px blue;  /*#f4811f was limegreen*/
 	padding-left: 28px;
 	margin:20px 20px 20px 10px;
 	font-family: "ubuntuB";
