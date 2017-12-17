@@ -156,7 +156,7 @@ strong{
 	font-family:"ubuntuL";
 	font-size:15px;
 	font-weight:100;
-	color:LimeGreen;
+	color:DarkBlue;  /***********             was Green******************/
 }
 
 .clear{clear: both;}
@@ -230,13 +230,13 @@ strong{
 	font-family:"ubuntuL";
 	font-size:19px;
 	font-weight:100;
-	color:LimeGreen;
+	color:blue; 
 }
 .textContent b{
 	font-family:"ubuntuL";
 	font-size:15px;
 	font-weight:100;
-	color:LimeGreen;
+	color:blue;
 }
 .bigLink{
 	font-size:19px;
@@ -244,11 +244,11 @@ strong{
 }
 .textContent a{
 	font-family:"ubuntuL";
-	color:LimeGreenf!important;
+	color:blue!important;
 	display: inline-block;
 }
 .textContent a:hover{
-	color:LimeGreen;
+	color:blue;
 }
 .textContent p{
 	margin:15px 0;
@@ -258,7 +258,7 @@ strong{
 .bigNum{
 	font-family:"ubuntuB";
 	font-size:19px;
-	color:LimeGreen;
+	color:DarkBlue;
 	font-style: normal;
 }
 #sss{
@@ -401,7 +401,7 @@ form p{
 	float:right;
 }
 .prePic{
-	border-bottom:6px solid LimeGreen;
+	border-bottom:6px solid blue;
 	display:inline-block;
 	width:142px;
 	height:100%;
@@ -440,7 +440,7 @@ form p{
 	color:#3e4757;
 }
 .someText a:hover{
-	color:LimeGreen;
+	color:blue;
 }
 .general{
 	width: 1142px;
@@ -644,7 +644,7 @@ form p{
 }
 .rightBtns:hover{
 	background: url('../images/btn_hover_back.png') repeat-x;
-	border-left: 7px solid LimeGreen;
+	border-left: 7px solid blue;
 	color:white;
 }
 .content .right-info .image{
@@ -817,7 +817,7 @@ form p{
 	text-decoration:underline;
 }
 .someLinksInner ul li{
-	color:LimeGreen;
+	color:blue;
 	display:inline-block;
 	padding-left:7px;
 }
@@ -932,7 +932,7 @@ input[name="house"]{
 	margin-right:20px;
 }
 .dot{
-	color:LimeGreen;
+	color:blue;
 	margin-left:5px;
 }
 #pagmenuCont{
@@ -943,7 +943,7 @@ input[name="house"]{
 }
 .chosen{
 	background:#c7ccd1;
-	border-left:7px solid LimeGreen!important;
+	border-left:7px solid blue!important;
 }
 .insidePage{
 	position:relative;
@@ -1059,7 +1059,7 @@ a:hover {
 /*        NewsSlider          */
 #newsPic{
 	width:145px;
-	border-bottom:6px solid LimeGreen;
+	border-bottom:6px solid blue;
 	display:inline-block;
 	float:left;
 	height:145px;
@@ -1080,7 +1080,7 @@ a:hover {
 	color:#3e4757;
 }
 #newsMain a:hover{
-	color:LimeGreen;
+	color:blue;
 }
 #newsMain .slidesjs-pagination{
 	float:right!important;
@@ -1129,7 +1129,7 @@ a:hover {
 	width:100%;
 }
 .nHead:hover{
-	color:LimeGreen!important;
+	color:blue!important;
 }
 #slides .slide{
 	/*max-width:740px;*/
@@ -1277,7 +1277,7 @@ a:hover {
 	margin:5px 0;
 }
 .selectbox li:hover {
-	background: LimeGreen;
+	background: blue;
 	color: #FFF;
 }
 .selectbox li.disabled {
@@ -1337,7 +1337,7 @@ a:hover {
 }
 .min{
 	margin:15px 0 15px 0;
-	border:1px solid LimeGreen;
+	border:1px solid blue;
 	border-radius:10px;
 	-moz-border-radius:10px;
 	-webkit-border-radius:10px;
